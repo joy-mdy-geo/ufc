@@ -21,7 +21,7 @@ def convert(input):
     output = re.sub(u'\u108f', u'\u1014', output) # na_nge
 
     # place
-    output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\1\\6\\7', output)
+    output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
 
     # pr_sint
     output = re.sub(u'\u1060', u'\u1039\u1000', output) # ka_gyi
