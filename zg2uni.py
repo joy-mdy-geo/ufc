@@ -24,7 +24,13 @@ def convert(input):
     output = re.sub(u'\u108f', u'\u1014', output) # na_nge
     output = re.sub(u'\u105a', u'\u102b\u103a', output) # yaycha_shayhtoe
     output = re.sub(u'\u108a', u'\u103d\u103e', output) # waswe_hatoe
-    output = re.sub(u'([\u1000-\u1021])\u1064', u'\u1004\u103a\u1039\\1', output) # nga_sint
+    # ngr_sint
+    output = re.sub(u'([\u1000-\u1021])\u1064', u'\u1064\\1', output)
+    output = re.sub(u'([\u1000-\u1021])\u108b', u'\u1064\\1\u102d', output)
+    output = re.sub(u'([\u1000-\u1021])\u108c', u'\u1064\\1\u102e', output)
+    output = re.sub(u'([\u1000-\u1021])\u108d', u'\u1064\\1\u1036', output)
+    output = re.sub(u'\u1064', u'\u1004\u103a\u1039', output)
+    output = re.sub(u'\u108e', u'\u102d\u1036', output)
 
     # place
     ## 1=tawaetoe 2=yayit 3=letter 4=yapint 5=waswe 6=hatoe 7=aumyit 8=yaychar
