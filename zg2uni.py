@@ -17,10 +17,10 @@ def convert(input):
     output = re.sub(u'\u1089', u'\u103e\u1030', output) #ht_ncn
     output = re.sub(u'\u103c', u'\u103d', output) # wa_swe
     output = re.sub(u'\u1086', u'\u103f', output) # ta_gyi
-    output = re.sub(u'\u104e', u'\u104e\u1044\u103a\u1038', output) # la_guang
     output = re.sub(u'[\u103b\u107e\u107f\u1080\u1081\u1082\u1083\u1084]', u'\u103c', output) # ya_yit
     output = re.sub(u'[\u103a\u107d]', u'\u103b', output) # ya_pint
     output = re.sub(u'\u1039', u'\u103a', output) # nga_tat
+    output = re.sub(u'\u104e', u'\u104e\u1044\u103a\u1038', output) # la_guang
     output = re.sub(u'[\u1037\u1094\u1095]', u'\u1037', output) # aut_myit
     output = re.sub(u'\u108f', u'\u1014', output) # na_nge
     output = re.sub(u'\u105a', u'\u102b\u103a', output) # yaycha_shayhtoe
@@ -39,7 +39,7 @@ def convert(input):
     ## for ta/na_chuangngin and longgyitin(sanke)
     output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
     output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
-    ## for wasapuat and waswe
+    ## for wasapuat and ngatat
     output = re.sub(u'(\u1038)(\u103a)', '\\2\\1', output)
 
     # pr_sint
