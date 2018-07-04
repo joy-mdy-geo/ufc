@@ -76,5 +76,11 @@ class TESTZG2UNI(unittest.TestCase):
         result = zg2uni.convert(zawgyi)
         self.assertEqual(unicode, result, "Failed to Convert Article Two")
 
+    def test_article_three(self):
+        zawgyi = u'လူတိုင္း၌ အသက္ရွင္ရန္ လြတ္လပ္မွုခြင့္ႏွင့္ လုံျခဳံစိတ္ခ်ခြင့္ ရွိသည္။'
+        unicode = u'လူတိုင်း၌ အသက်ရှင်ရန် လွတ်လပ်မှုခွင့်နှင့် လုံခြုံစိတ်ချခွင့် ရှိသည်။'
+        result = zg2uni.convert(zawgyi)
+        self.assertEqual(unicode, result, "Failed to Convert Article Three")
+
 if __name__ == "__main__":
     unittest.main()
