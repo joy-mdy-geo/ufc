@@ -334,5 +334,15 @@ class TESTZG2UNI(unittest.TestCase):
         result = zg2uni.convert(zawgyi)
         self.assertEqual(unicode, result, "Failed to Convert Article TwentyThree")
 
+    def test_article_twentyfour(self):
+        zawgyi = u'''အပိုဒ္ ၂၄
+        လူတိုင္းတြင္ သင့္ျမတ္ေလ်ာ္ကန္စြာ ကန႔္သတ္ထားသည့္ အလုပ္လုပ္ခ်ိန္ အျပင္၊ လစာႏွင့္တကြ အခါကာလအားေလ်ာ္စြာ သတ္မွတ္ ထားသည့္ 
+        အလုပ္ အားလပ္ရက္မ်ားပါဝင္သည့္ အနားယူခြင့္ႏွင့္ အားလပ္ခြင့္ ခံစားပိုင္ခြင့္ ရွိသည္။'''
+        unicode = u'''အပိုဒ် ၂၄
+        လူတိုင်းတွင် သင့်မြတ်လျော်ကန်စွာ ကန့်သတ်ထားသည့် အလုပ်လုပ်ချိန် အပြင်၊ လစာနှင့်တကွ အခါကာလအားလျော်စွာ သတ်မှတ် ထားသည့် 
+        အလုပ် အားလပ်ရက်များပါဝင်သည့် အနားယူခွင့်နှင့် အားလပ်ခွင့် ခံစားပိုင်ခွင့် ရှိသည်။'''
+        result = zg2uni.convert(zawgyi)
+        self.assertEqual(unicode, result, "Failed to Convert Article TwentyFour")
+
 if __name__ == "__main__":
     unittest.main()
