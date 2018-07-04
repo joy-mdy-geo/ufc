@@ -39,8 +39,6 @@ def convert(input):
     ## for ta/na_chuangngin and longgyitin(sanke)
     output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
     output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
-    ## for wasapuat and ngatat
-    output = re.sub(u'(\u1038)(\u103a)', '\\2\\1', output)
 
     # pr_sint
     output = re.sub(u'\u1060', u'\u1039\u1000', output) # ka_gyi
