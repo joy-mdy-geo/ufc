@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69cc34b5-9bc2-4661-b725-8f6bbd5b6155" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/UDHR-ZG.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/UDHR-ZG.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +42,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="212" column="77" selection-start-line="212" selection-start-column="77" selection-end-line="212" selection-end-column="77" />
+            <state relative-caret-position="719">
+              <caret line="206" column="33" selection-start-line="206" selection-start-column="33" selection-end-line="206" selection-end-column="33" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1530718928142" expanded="true" signature="68:69" ph="..." />
+                <marker date="1530719470437" expanded="true" signature="68:69" ph="..." />
               </folding>
             </state>
           </provider>
@@ -169,11 +170,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="212" column="77" selection-start-line="212" selection-start-column="77" selection-end-line="212" selection-end-column="77" />
+        <state relative-caret-position="719">
+          <caret line="206" column="33" selection-start-line="206" selection-start-column="33" selection-end-line="206" selection-end-column="33" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1530718928142" expanded="true" signature="68:69" ph="..." />
+            <marker date="1530719470437" expanded="true" signature="68:69" ph="..." />
           </folding>
         </state>
       </provider>
