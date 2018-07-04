@@ -24,7 +24,7 @@ def convert(input):
     output = re.sub(u'\u108f', u'\u1014', output) # na_nge
     output = re.sub(u'\u105a', u'\u102b\u103a', output) # yaycha_shayhtoe
     output = re.sub(u'\u108a', u'\u103d\u103e', output) # waswe_hatoe
-    output = re.sub(u'\u1064', u'\u1004\u103a\u1039', output) # nga_sint
+    output = re.sub(u'([\u1000-\u1021])\u1064', u'\u1004\u103a\u1039\\1', output) # nga_sint
 
     # place
     output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
