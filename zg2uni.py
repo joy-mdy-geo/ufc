@@ -8,9 +8,12 @@ def convert(input):
     
     output = output.replace(u'\u106a', u'\u1009')
     output = re.sub(u'\u106b', u'\u100a', output)
+    output = re.sub(u'\u1090', u'\u101b', output)
     output = re.sub(u'\u1033', u'\u102f', output) # ta_chuang_ngin
     output = re.sub(u'\u1034', u'\u1030', output) # na_chuang_ngin
     output = re.sub(u'[\u103d\u1087]', u'\u103e', output) # ha_toe
+    output = re.sub(u'\u1088', u'\u103e\u102f', output) #ht_tcn
+    output = re.sub(u'\u1089', u'\u103e\u1030', output) #ht_ncn
     output = re.sub(u'\u103c', u'\u103d', output) # wa_swe
     output = re.sub(u'\u1086', u'\u103f', output) # ta_gyi
     output = re.sub(u'\u104e', u'\u104e\u1044\u103a\u1038', output) # la_guang
@@ -19,9 +22,15 @@ def convert(input):
     output = re.sub(u'\u1039', u'\u103a', output) # nga_tat
     output = re.sub(u'[\u1037\u1094\u1095]', u'\u1037', output) # aut_myit
     output = re.sub(u'\u108f', u'\u1014', output) # na_nge
+    output = re.sub(u'\u105a', u'\u102b\u103a', output) # yaycha_shayhtoe
+    output = re.sub(u'\u108a', u'\u103d\u103e', output) # waswe_hatoe
+    
 
     # place
     output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
+    output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
+    output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
+    output = re.sub(u'(\u1038)(\u103a)', '\\2\\1', output)
 
     # pr_sint
     output = re.sub(u'\u1060', u'\u1039\u1000', output) # ka_gyi
