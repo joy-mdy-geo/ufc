@@ -27,9 +27,12 @@ def convert(input):
     output = re.sub(u'([\u1000-\u1021])\u1064', u'\u1004\u103a\u1039\\1', output) # nga_sint
 
     # place
+    ## 1=tawaetoe 2=yayit 3=letter 4=yapint 5=waswe 6=hatoe 7=aumyit 8=yaychar
     output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
+    ## for ta/na_chuangngin and longgyitin(sanke)
     output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
     output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
+    ## for wasapuat and waswe
     output = re.sub(u'(\u1038)(\u103a)', '\\2\\1', output)
 
     # pr_sint
