@@ -140,5 +140,13 @@ class TESTZG2UNI(unittest.TestCase):
         result = zg2uni.convert(zawgyi)
         self.assertEqual(unicode, result, "Failed to Convert Article Eight")
 
+    def test_article_nine(self):
+        zawgyi = u'''အပိုဒ္ ၉
+        မည္သူမၽွ ဥပေဒအရ မဟုတ္ေသာ ဖမ္းဆီးျခင္းကို ျဖစ္ေစ၊ ခ်ဳပ္ေႏွာင္ျခင္းကို ျဖစ္ေစ၊ ျပည္ႏွင္ျခင္းကိုျဖစ္ေစ မခံေစရ။'''
+        unicode = u'''အပိုဒ် ၉
+        မည်သူမျှ ဥပဒေအရ မဟုတ်သော ဖမ်းဆီးခြင်းကို ဖြစ်စေ၊ ချုပ်နှောင်ခြင်းကို ဖြစ်စေ၊ ပြည်နှင်ခြင်းကိုဖြစ်စေ မခံစေရ။'''
+        result = zg2uni.convert(zawgyi)
+        self.assertEqual(unicode, result, "Failed to Convert Article Nine")
+
 if __name__ == "__main__":
     unittest.main()
