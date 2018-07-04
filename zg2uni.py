@@ -7,6 +7,7 @@ def convert(input):
     output = input
     
     output = output.replace(u'\u106a', u'\u1009')
+    output = re.sub(u'\u1025(?=[\u1039\u102c])', u'\u1009', output)
     output = re.sub(u'\u106b', u'\u100a', output)
     output = re.sub(u'\u1090', u'\u101b', output)
     output = re.sub(u'\u1033', u'\u102f', output) # ta_chuang_ngin
