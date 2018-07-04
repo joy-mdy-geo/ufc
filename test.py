@@ -82,5 +82,15 @@ class TESTZG2UNI(unittest.TestCase):
         result = zg2uni.convert(zawgyi)
         self.assertEqual(unicode, result, "Failed to Convert Article Three")
 
+    def test_article_four(self):
+        zawgyi = u'မည္သူကိုမၽွ ေက်းကၽြန္အျဖစ္၊ သို႔တည္းမဟုတ္ အေစအပါးအျဖစ္၊ နိုင္ထက္စီးနင္း ေစခိုင္းျခင္း မျပဳရ၊ လူကို ' \
+                 u'ေက်းကၽြန္သဖြယ္ အဓမၼ ေစခိုင္းျခင္း၊ အေရာင္းအဝယ္ ျပဳျခင္းႏွင့္ ထိုသေဘာ သက္ေရာက္ေသာ လုပ္ငန္းဟူသမၽွကို ' \
+                 u'ပိတ္ပင္ တားျမစ္ ရမည္။ '
+        unicode = u'မည်သူကိုမျှ ကျေးကျွန်အဖြစ်၊ သို့တည်းမဟုတ် အစေအပါးအဖြစ်၊ နိုင်ထက်စီးနင်း စေခိုင်းခြင်း မပြုရ၊ ' \
+                  u'လူကို ကျေးကျွန်သဖွယ် အဓမ္မ စေခိုင်းခြင်း၊ အရောင်းအဝယ် ပြုခြင်းနှင့် ထိုသဘော သက်ရောက်သော ' \
+                  u'လုပ်ငန်းဟူသမျှကို ပိတ်ပင် တားမြစ် ရမည်။ '
+        result = zg2uni.convert(zawgyi)
+        self.assertEqual(unicode, result, "Failed to Convert Article Four")
+
 if __name__ == "__main__":
     unittest.main()
