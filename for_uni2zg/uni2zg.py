@@ -86,7 +86,7 @@ def shape(input):
     output = re.sub(u'\u1014([\u103d])', u'\u108f\\1', output)
 
     # aut_myit
-    output = re.sub(u'\u1030\u1037', u'\u1030\u1094', output)  # for 2_chuang_ngin_ato
+    output = re.sub(u'([\u1014\u1030])\u1037', u'\\1\u1094', output)  # for 2_chuang_ngin_ato
 
     return output
 
