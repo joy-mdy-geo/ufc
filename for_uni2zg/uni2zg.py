@@ -47,7 +47,6 @@ def precompose(input):
     output = re.sub(u'\u100f\u1039\u100d', u'\u1091', output)  # ng&dg
     output = re.sub(u'\u100b\u1039\u100c', u'\u1092', output)  # ddlg&twb
     output = re.sub(u'\u100b\u1039\u100b', u'\u1097', output)  # twiceddlg
-    output = re.sub(u'\u103e\u102f', u'\u1088', output)  # hatoe_tachaungngin
     output = re.sub(u'\u102b\u103a', u'\u105a', output)  # yaycha_shayhtoe
     outptu = re.sub(u'\u103d\u103e', u'\u108a', output)  # waswe_hatoe
 
