@@ -16,7 +16,7 @@ def replace(input):
     return output
 
 
-def recompose(input):
+def precompose(input):
     output = input
 
     # pr_sint
@@ -43,8 +43,8 @@ def shape(input):
 def convert(input):
     output = input
     output = replace(output)
-    output = recompose(output)
+    output = precompose(output)
     output = logical2visual(output)
-    output = shape(input)
+    output = shape(output)
 
     return output
