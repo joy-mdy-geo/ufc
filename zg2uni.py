@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 import re
 
-
-def convert(input):
-    
+def replace(input):
+    # replace each zawgyi code point with equivalent code point in unicode
     output = input
-    
-    # replace
+
     output = output.replace(u'\u106a', u'\u1009') # nya_lay
-    output = re.sub(u'\u1025(?=[\u1039\u102c])', u'\u1009', output) # nyalay_yaychar
     output = re.sub(u'\u106b', u'\u100a', output) # nya
     output = re.sub(u'\u1090', u'\u101b', output) # ya_guat
     output = re.sub(u'\u1033', u'\u102f', output) # ta_chuang_ngin
@@ -22,6 +19,15 @@ def convert(input):
     output = re.sub(u'\u104e', u'\u104e\u1044\u103a\u1038', output) # la_guang
     output = re.sub(u'[\u1037\u1094\u1095]', u'\u1037', output) # aut_myit
     output = re.sub(u'\u108f', u'\u1014', output) # na_nge
+
+    return output
+
+
+def decompose(input):
+    # decomposed combined characters to sequenced characters
+    output = input
+
+    output = re.sub(u'\u1025(?=[\u103a\u102c])', u'\u1009', output) # nyalay_yaychar
     ## nga_sint
     output = re.sub(u'([\u1000-\u1021])\u1064', u'\u1064\\1', output)
     output = re.sub(u'([\u1000-\u1021])\u108b', u'\u1064\\1\u102d', output)
@@ -30,19 +36,10 @@ def convert(input):
     output = re.sub(u'\u1064', u'\u1004\u103a\u1039', output)
     output = re.sub(u'\u108e', u'\u102d\u1036', output)
 
-    # decompose
-    output = re.sub(u'\u1088', u'\u103e\u102f', output) # ha_toe and ta_chuang_ngin
-    output = re.sub(u'\u1089', u'\u103e\u1030', output) # ha_toe and na_chuang_ngin
-    output = re.sub(u'\u105a', u'\u102b\u103a', output) # yaycha_shayhtoe
-    output = re.sub(u'\u108a', u'\u103d\u103e', output) # waswe_hatoe
-
-
-    # place
-    ## 1=tawaetoe 2=yayit 3=letter 4=yapint 5=waswe 6=hatoe 7=aumyit 8=yaychar
-    output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
-    ## for ta/na_chuangngin and longgyitin(sanke)
-    output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
-    output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
+    output = re.sub(u'\u1088', u'\u103e\u102f', output)  # ha_toe and ta_chuang_ngin
+    output = re.sub(u'\u1089', u'\u103e\u1030', output)  # ha_toe and na_chuang_ngin
+    output = re.sub(u'\u105a', u'\u102b\u103a', output)  # yaycha_shayhtoe
+    output = re.sub(u'\u108a', u'\u103d\u103e', output)  # waswe_hatoe
 
     # pr_sint
     output = re.sub(u'\u1060', u'\u1039\u1000', output) # ka_gyi
@@ -72,5 +69,29 @@ def convert(input):
     output = re.sub(u'\u1091', u'\u100f\u1039\u100d', output) # ng&dyg
     output = re.sub(u'\u1092', u'\u100b\u1039\u100c', output) # ddlg&twb
     output = re.sub(u'\u1097', u'\u100b\u1039\u100b', output) # twiceddlg
+
+    return output
+
+
+def visual2logical(input):
+    # reorder the sequence of characters from visual to logical
+    output = input
+    ## 1=tawaetoe 2=yayit 3=letter 4=yapint 5=waswe 6=hatoe 7=aumyit 8=yaychar
+    output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
+    ## for ta/na_chuangngin and longgyitin(sanke)
+    output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
+    output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
+
+    return output
+
+
+
+def convert(input):
+    
+    output = input
+
+    output = replace(output)
+    output = decompose(output)
+    output = visual2logical(output)
 
     return output
