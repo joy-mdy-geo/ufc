@@ -74,8 +74,11 @@ def logical2visual(input):
 def shape(input):
     output = input
 
+    # ya_yit
+    output = re.sub(u'\u103b(\u1000)', u'\u107e\\1', output)  # ya_yit_agyi
+
     # aut_myit
-    output = re.sub(u'((?:[\u102f\u1030\u1033\u1034])?)\u1037', u'\\1\u1094', output)
+    output = re.sub(u'\u1030\u1037', u'\u1030\u1094', output)  # for 2_chuang_ngin_ato
 
     return output
 
