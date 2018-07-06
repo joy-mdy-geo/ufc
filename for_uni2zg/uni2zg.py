@@ -24,6 +24,40 @@ def precompose(input):
     output = re.sub(u'\u1039\u1001', u'\u1061', output)  # ka_kway
     output = re.sub(u'\u1039\u1002', u'\u1062', output)  # ga_nge
     output = re.sub(u'\u1039\u1003', u'\u1063', output)  # ga_gyi
+    output = re.sub(u'\u1039\u1005', u'\u1065', output)  # sa_lone
+    output = re.sub(u'\u1039\u1006', u'\u1066', output)  # sa_lane
+    output = re.sub(u'\u1039\u1007', u'\u1068', output)  # sa_gwe
+    output = re.sub(u'\u1039\u1008', u'\u1069', output)  # sa_myin_zwe
+    output = re.sub(u'\u1039\u100b', u'\u106c', output)  # da_da_lin_gyake
+    output = re.sub(u'\u1039\u100c', u'\u106d', output)  # ta_wen_bae
+    output = re.sub(u'\u100d\u1039\u100d', u'\u106e', output)  # da_yin_guat
+    output = re.sub(u'\u100d\u1039\u100e', u'\u106f', output)  # da_yin_mot
+    output = re.sub(u'\u1039\u100f', u'\u1070', output)  # na_gyi
+    output = re.sub(u'\u1039\u1010', u'\u1071', output)  # da_wen_bu
+    output = re.sub(u'\u1039\u1011', u'\u1073', output)  # ta_sin_htoo
+    output = re.sub(u'\u1039\u1012', u'\u1075', output)  # da_dway
+    output = re.sub(u'\u1039\u1013', u'\u1076', output)  # da_aut_chai
+    output = re.sub(u'\u1039\u1014', u'\u1077', output)  # nga_nge
+    output = re.sub(u'\u1039\u1015', u'\u1078', output)  # pa_saut
+    output = re.sub(u'\u1039\u1016', u'\u1079', output)  # pa_ot_top
+    output = re.sub(u'\u1039\u1017', u'\u107a', output)  # ba_lat_chai
+    output = re.sub(u'\u1039\u1018', u'\u107b', output)  # ba_gone
+    output = re.sub(u'\u1039\u1019', u'\u107c', output)  # ma
+    output = re.sub(u'\u1039\u101c', u'\u1085', output)  # la
+    output = re.sub(u'\u100f\u1039\u100d', u'\u1091', output)  # ng&dg
+    output = re.sub(u'\u100b\u1039\u100c', u'\u1092', output)  # ddlg&twb
+    output = re.sub(u'\u100b\u1039\u100b', u'\u1097', output)  # twiceddlg
+    output = re.sub(u'\u103e\u102f', u'\u1088', output)  # hatoe_tachaungngin
+    output = re.sub(u'\u102b\u103a', u'\u105a', output)  # yaycha_shayhtoe
+    outptu = re.sub(u'\u103d\u103e', u'\u108a', output)  # waswe_hatoe
+
+    # nga_sint
+    output = re.sub(u'\u102d\u1036', u'\u108e', output) 
+    output = re.sub(u'\u1004\u103a\u1039', u'\u1064', output)
+    output = re.sub(u'(\u1064)([\u1000-\u1021])', '\\2\\1', output)
+    output = re.sub(u'\u1064([\u1000-\u1021])\u102d', u'\\1\u108b', output)
+    output = re.sub(u'\u1064([\u1000-\u1021])\u102e', u'\\1\u108c', output)
+    output = re.sub(u'\u1064([\u1000-\u1021])\u1036', u'\\1\u108d', output)
 
     return output
 
@@ -45,8 +79,9 @@ def shape(input):
 
 def convert(input):
     output = input
-    output = replace(output)
+    
     output = precompose(output)
+    output = replace(output)
     output = logical2visual(output)
     output = shape(output)
 
