@@ -34,7 +34,7 @@ def convert(input):
     output = re.sub(u'\u1088', u'\u103e\u102f', output) # ha_toe and ta_chuang_ngin
     output = re.sub(u'\u1089', u'\u103e\u1030', output) # ha_toe and na_chuang_ngin
     output = re.sub(u'\u105a', u'\u102b\u103a', output) # yaycha_shayhtoe
-    output = re.sub(u'\u108a', u'\u102b\u103e', output) # waswe_hatoe
+    output = re.sub(u'\u108a', u'\u103d\u103e', output) # waswe_hatoe
 
 
     # place
