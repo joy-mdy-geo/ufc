@@ -56,7 +56,7 @@ def convert(input):
     output = re.sub(u'\u106c', u'\u1039\u100b', output) # da_da_lin_gyake
     output = re.sub(u'\u106d', u'\u1039\u100c', output) # ta_wen_bae
     output = re.sub(u'\u106e', u'\u100d\u1039\u100d', output) # da_yin_guat
-    output = re.sub(u'\u106f', u'\u100e\u1039\u100d', output) # da_yin_mot
+    output = re.sub(u'\u106f', u'\u100d\u1039\u100e', output) # da_yin_mot
     output = re.sub(u'\u1070', u'\u1039\u100f', output) # na_gyi
     output = re.sub(u'[\u1071\u1072]', u'\u1039\u1010', output) # da_wen_bu
     output = re.sub(u'[\u1073\u1074]', u'\u1039\u1011', output) # ta_sin_htoo
@@ -70,7 +70,7 @@ def convert(input):
     output = re.sub(u'\u107c', u'\u1039\u1019', output) # ma
     output = re.sub(u'\u1085', u'\u1039\u101c', output) # la
     output = re.sub(u'\u1091', u'\u100f\u1039\u100d', output) # ng&dyg
-    output = re.sub(u'\u1092', u'\u100a\u1039\u100b', output) # ddlg&twb
+    output = re.sub(u'\u1092', u'\u100b\u1039\u100c', output) # ddlg&twb
     output = re.sub(u'\u1097', u'\u100b\u1039\u100b', output) # twiceddlg
 
     return output
