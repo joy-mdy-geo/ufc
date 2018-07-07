@@ -86,6 +86,8 @@ def shape(input):
     output = re.sub(u'\u1080([\u1000-\u1021])([\u102d\u102e\u1036])(\u103c)', u'\u1084\\1\\2\\3', output)  # yayit_agi apyat
 
     # ta/na_chuang_ngin
+    output = re.sub(u'([\u1008\u100b\u100c\u100d\u1020])\u102f', u'\\1\u1033, output')  # 1cn with some letters
+    output = re.sub(u'([\u1008\u100b\u100c\u100d\u1020])\u1030', u'\\1\u1034, output')  # 2cn with some letters
     output = re.sub(u'([\u103b\u107e\u107f\u1080])([\u1000-\u1021])((?:[\u102d\u102e\u1036])?)\u102f', u'\\1\\2\\3\u1033', output)  # yayit&1cn
     output = re.sub(u'([\u103b\u107e\u107f\u1080])([\u1000-\u1021])((?:[\u102d\u102e\u1036])?)\u1030', u'\\1\\2\\3\u1034', output)  # yayit&2cn
     output = re.sub(u'(\u103a)((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # yapint&1cn
