@@ -106,7 +106,7 @@ def shape(input):
 
     # aut_myit
     output = re.sub(u'([\u1014\u102f\u1030\u1033\u1034])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1094', output)
-    output = re.sub(u'([\u103c])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1095', output)
+    output = re.sub(u'([\u103c\u103d])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1095', output)
 
     # yaguat
     output = re.sub(u'\u101b([\u102f\u1030])', u'\u1090\\1', output)
