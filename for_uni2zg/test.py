@@ -260,6 +260,16 @@ class TESTZG2UNI(unittest.TestCase):
         result = uni2zg.convert(unicode)
         self.assertEqual(zawgyi, result, "Failed to Convert Article Nineteen")
 
+    def test_article_twenty(self):
+        unicode = u'''အပိုဒ် ၂ဝ
+        လူတိုင်းတွင် လွတ်လပ် အေးချမ်းစွာ စုဝေးနိုင်ခွင့် နှင့် ဖွဲ့စည်းနိုင်ခွင့် တို့ ရှိသည်။
+        မည်သူ့ကိုမျှ အဖွဲ့အစည်းတစ်ခုသို့ ဝင်စေရန် အတင်းအကျပ်မပြုရ။'''
+        zawgyi = u'''အပိုဒ္ ၂ဝ
+        လူတိုင္းတြင္ လြတ္လပ္ ေအးခ်မ္းစြာ စုေဝးနိုင္ခြင့္ ႏွင့္ ဖြဲ႕စည္းနိုင္ခြင့္ တို႔ ရွိသည္။
+        မည္သူ႔ကိုမၽွ အဖြဲ႕အစည္းတစ္ခုသို႔ ဝင္ေစရန္ အတင္းအက်ပ္မျပဳရ။'''
+        result = uni2zg.convert(unicode)
+        self.assertEqual(zawgyi, result, "Failed to Convert Article Twenty")
+
 
 if __name__ == "__main__":
     unittest.main()
