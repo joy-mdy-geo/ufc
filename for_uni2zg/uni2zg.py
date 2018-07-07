@@ -19,6 +19,14 @@ def replace(input):
 def precompose(input):
     output = input
 
+    # nga_sint
+    output = re.sub(u'\u102d\u1036', u'\u108e', output)
+    output = re.sub(u'\u1004\u103a\u1039', u'\u1064', output)
+    output = re.sub(u'(\u1064)([\u1000-\u1021])', '\\2\\1', output)
+    output = re.sub(u'\u1064([\u1000-\u1021])\u102d', u'\\1\u108b', output)
+    output = re.sub(u'\u1064([\u1000-\u1021])\u102e', u'\\1\u108c', output)
+    output = re.sub(u'\u1064([\u1000-\u1021])\u1036', u'\\1\u108d', output)
+
     # pr_sint
     output = re.sub(u'\u1039\u1000', u'\u1060', output)  # ka_gyi
     output = re.sub(u'\u1039\u1001', u'\u1061', output)  # ka_kway
@@ -49,14 +57,6 @@ def precompose(input):
     output = re.sub(u'\u100b\u1039\u100b', u'\u1097', output)  # twiceddlg
     output = re.sub(u'\u102b\u103a', u'\u105a', output)  # yaycha_shayhtoe
     output = re.sub(u'\u103d\u103e', u'\u108a', output)  # waswe_hatoe
-
-    # nga_sint
-    output = re.sub(u'\u102d\u1036', u'\u108e', output) 
-    output = re.sub(u'\u1004\u103a\u1039', u'\u1064', output)
-    output = re.sub(u'(\u1064)([\u1000-\u1021])', '\\2\\1', output)
-    output = re.sub(u'\u1064([\u1000-\u1021])\u102d', u'\\1\u108b', output)
-    output = re.sub(u'\u1064([\u1000-\u1021])\u102e', u'\\1\u108c', output)
-    output = re.sub(u'\u1064([\u1000-\u1021])\u1036', u'\\1\u108d', output)
 
     return output
 
