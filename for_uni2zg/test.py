@@ -382,6 +382,16 @@ class TESTZG2UNI(unittest.TestCase):
         result = uni2zg.convert(unicode)
         self.assertEqual(zawgyi, result, "Failed to Convert Artilce TwentySeven")
 
+    def test_article_twentyeight(self):
+        unicode = u'''အပိုဒ် ၂၈
+        လူတိုင်းသည် ဤကြေညာ စာတမ်းတွင် ဖော်ပြထားသည့် အခွင့်အရေးများ နှင့် လွတ်လပ်ခွင့်များကို အပြည့်အစုံ ရယူနိုင်သော လူမှု ဆက်ဆံရေး 
+        အခြေအနေနှင့် အပြည်ပြည်ဆိုင်ရာ ဆက်ဆံရေး အခြေအနေတို့၏ အကျိုးကျေးဇူးကို ခံစားနိုင်ခွင့် ရှိသည်။'''
+        zawgyi = u'''အပိုဒ္ ၂၈
+        လူတိုင္းသည္ ဤေၾကညာ စာတမ္းတြင္ ေဖာ္ျပထားသည့္ အခြင့္အေရးမ်ား ႏွင့္ လြတ္လပ္ခြင့္မ်ားကို အျပည့္အစုံ ရယူနိုင္ေသာ လူမွု ဆက္ဆံေရး 
+        အေျခအေနႏွင့္ အျပည္ျပည္ဆိုင္ရာ ဆက္ဆံေရး အေျခအေနတို႔၏ အက်ိဳးေက်းဇူးကို ခံစားနိုင္ခြင့္ ရွိသည္။'''
+        result = uni2zg.convert(unicode)
+        self.assertEqual(zawgyi, result, "Failed to Convert Article TwentyEight")
+
 
 if __name__ == "__main__":
     unittest.main()
