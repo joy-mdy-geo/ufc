@@ -79,7 +79,8 @@ def shape(input):
     output = re.sub(u'\u107e([\u1000-\u1021])([\u102d\u102e])', u'\u1080\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
 
     # ta/na_chuang_ngin
-    output = re.sub(u'([\u103b\u107e])([\u1000-\u1021])\u102f', u'\\1\\2\u1033', output)  # ato_to_ashay
+    output = re.sub(u'([\u103b\u107e\u107f\u1080])([\u1000-\u1021])\u102f', u'\\1\\2\u1033', output)  # yayit&1cn
+    output = re.sub(u'(\u103a)((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # yapint&1cn
 
     # nag_nge_apyat
     output = re.sub(u'\u1014([\u103d])', u'\u108f\\1', output)

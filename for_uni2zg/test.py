@@ -40,7 +40,7 @@ class TESTZG2UNI(unittest.TestCase):
         လူတိုင္းသည္ တူညီ လြတ္လပ္ေသာ ဂုဏ္သိကၡာျဖင့္ လည္းေကာင္း၊ တူညီလြတ္လပ္ေသာ အခြင့္အေရးမ်ားျဖင့္ လည္းေကာင္း၊ ေမြးဖြားလာသူမ်ား ျဖစ္သည္။ 
         ထိုသူတို႔၌ ပိုင္းျခား ေဝဖန္တတ္ေသာ ဉာဏ္ႏွင့္ က်င့္ဝတ္ သိတတ္ေသာ စိတ္တို႔ရွိၾက၍ ထိုသူတို႔သည္ အခ်င္းခ်င္း ေမတၱာထား၍ ဆက္ဆံက်င့္သုံးသင့္၏။'''
         result = uni2zg.convert(unicode)
-        self.assertEqual(zawgyi, result, "Failed to Convert Header Three")
+        self.assertEqual(zawgyi, result, "Failed to Convert Article One")
 
     def test_article_two(self):
         unicode = u'''အပိုဒ် ၂
@@ -64,7 +64,7 @@ class TESTZG2UNI(unittest.TestCase):
         သို႔တည္းမဟုတ္ ကိုယ္ပိုင္ အုပ္ခ်ဳပ္ခြင့္ အာဏာတို႔ တစိတ္တေဒသေလာက္သာ ရရွိသည့္ နယ္ေျမ စသျဖင့္ ယင္းသို႔ ေသာ နယ္ေျမမ်ား ျဖစ္သည္ 
         ဟူေသာ အေၾကာင္းကို အေထာက္အထား ျပဳ၍ ေသာ္လည္းေကာင္း ခြဲျခားျခင္း လုံးဝ မရွိေစရ။'''
         result = uni2zg.convert(unicode)
-        self.assertEqual(zawgyi, result, "Failed to Convert Header Four")
+        self.assertEqual(zawgyi, result, "Failed to Convert Article Two")
 
 
 if __name__ == "__main__":
