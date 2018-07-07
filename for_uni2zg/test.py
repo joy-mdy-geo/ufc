@@ -194,6 +194,16 @@ class TESTZG2UNI(unittest.TestCase):
         result = uni2zg.convert(unicode)
         self.assertEqual(zawgyi, result, "Failed to Convert Article Fourteen")
 
+    def test_article_fifteen(self):
+        unicode = u'''အပိုဒ် ၁၅
+        လူတိုင်းသည်၊ နိုင်ငံ တစ်နိုင်ငံ၏ နိုင်ငံသားအဖြစ် ခံယူခွင့်ရှိသည်။
+        ဥပဒေအရ မဟုတ်လျှင် မည်သူမျှ မိမိ၏ နိုင်ငံသားအဖြစ်ကို စွန့်လွှတ်ခြင်း မခံစေရ၊ နိုင်ငံသားအဖြစ် ပြောင်းလဲနိုင်သောအခွင့်အရေးကို လည်း ငြင်းပယ်ခြင်း မခံစေရ။'''
+        zawgyi = u'''အပိုဒ္ ၁၅
+        လူတိုင္းသည္၊ နိုင္ငံ တစ္နိုင္ငံ၏ နိုင္ငံသားအျဖစ္ ခံယူခြင့္ရွိသည္။
+        ဥပေဒအရ မဟုတ္လၽွင္ မည္သူမၽွ မိမိ၏ နိုင္ငံသားအျဖစ္ကို စြန႔္လႊတ္ျခင္း မခံေစရ၊ နိုင္ငံသားအျဖစ္ ေျပာင္းလဲနိုင္ေသာအခြင့္အေရးကို လည္း ျငင္းပယ္ျခင္း မခံေစရ။'''
+        result = uni2zg.convert(unicode)
+        self.assertEqual(zawgyi, result, "Failed to Convert Article Fifteen")
+
 
 if __name__ == "__main__":
     unittest.main()
