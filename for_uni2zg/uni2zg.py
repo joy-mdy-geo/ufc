@@ -83,7 +83,7 @@ def shape(input):
     output = re.sub(u'(\u103a)((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # yapint&1cn
 
     # ya_pint
-    output = re.sub(u'\u103a(\u103d)', u'\u107d\\1', output)  # with hatoe
+    output = re.sub(u'\u103a([\u103c\u103d])', u'\u107d\\1', output)  # with hatoe
 
     # nag_nge_apyat
     output = re.sub(u'\u1014([\u103d\u103c])', u'\u108f\\1', output)
