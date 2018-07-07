@@ -78,8 +78,8 @@ def shape(input):
 
     # ya_yit
     output = re.sub(u'\u103b([\u1000\u1003\u1006\u100f\u1010\u1011\u1018\u101a\u101c\u101e\u101f\u1021])', u'\u107e\\1', output)  # ya_yit_agyi
-    output = re.sub(u'\u103b([\u1000-\u1021])([\u102d\u102e])', u'\u107f\\1\\2', output)  # yayit with long_gyi_din(sanke)
-    output = re.sub(u'\u107e([\u1000-\u1021])([\u102d\u102e])', u'\u1080\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
+    output = re.sub(u'\u103b([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u107f\\1\\2', output)  # yayit with long_gyi_din(sanke)
+    output = re.sub(u'\u107e([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u1080\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
 
     # ta/na_chuang_ngin
     output = re.sub(u'([\u103b\u107e\u107f\u1080])([\u1000-\u1021])\u102f', u'\\1\\2\u1033', output)  # yayit&1cn
