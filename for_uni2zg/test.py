@@ -380,7 +380,7 @@ class TESTZG2UNI(unittest.TestCase):
         လူတိုင္းတြင္ သိပၸံမွ ျဖစ္ေစ၊ စာေပမွျဖစ္ေစ၊ သုခုမပညာမွ ျဖစ္ေစ၊ မိမိကိုယ္ပိုင္ဉာဏ္ျဖင့္ႀကံစည္ ဖန္တီးမွုမွ ျဖစ္ထြန္းလာသည့္ ဂုဏ္ႏွင့္ ေငြေၾကး အက်ိဳးအျမတ္မ်ားကို 
         ခံစားရယူနိုင္ရန္ အခြင့္အေရး အတြက္ ကာကြယ္မွုကို ရရွိရန္ အခြင့္အေရး ရွိသည္။'''
         result = uni2zg.convert(unicode)
-        self.assertEqual(zawgyi, result, "Failed to Convert Artilce TwentySeven")
+        self.assertEqual(zawgyi, result, "Failed to Convert Article TwentySeven")
 
     def test_article_twentyeight(self):
         unicode = u'''အပိုဒ် ၂၈
@@ -408,6 +408,17 @@ class TESTZG2UNI(unittest.TestCase):
         result = uni2zg.convert(unicode)
         self.assertEqual(zawgyi, result, "Failed to Convert Article TwentyNine")
 
+    def test_article_thirty(self):
+        unicode = u'''အပိုဒ် ၃ဝ
+        ဤကြေညာစာတမ်းပါ အခွင့်အရေးနှင့်တကွ လွတ်လပ်ခွင့်များ ပျက်စီးရာပျက်စီးကြောင်းတို့ကိုရည်ရွယ်၍၊ နိုင်ငံတစ်နိုင်ငံ အတွက် ဖြစ်စေ၊ 
+        လူတစ်စုအတွက် ဖြစ်စေ၊ လူတစ်ဦးတစ်ယောက် အတွက် ဖြစ်စေ ပါဝင် ဆောင်ရွက်ရန် အခွင့်ရှိသည်ဟု သော်လည်းကောင်း၊ 
+        ကိုယ်တိုင်ဆောင်ရွက်ရန် အခွင့်ရှိသည် ဟုသော်လည်းကောင်းအဓိပ္ပါယ် ပိုင်းခြားကောက်ယူခြင်း မရှိစေရ။'''
+        zawgyi = u'''အပိုဒ္ ၃ဝ
+        ဤေၾကညာစာတမ္းပါ အခြင့္အေရးႏွင့္တကြ လြတ္လပ္ခြင့္မ်ား ပ်က္စီးရာပ်က္စီးေၾကာင္းတို႔ကိုရည္ရြယ္၍၊ နိုင္ငံတစ္နိုင္ငံ အတြက္ ျဖစ္ေစ၊ 
+        လူတစ္စုအတြက္ ျဖစ္ေစ၊ လူတစ္ဦးတစ္ေယာက္ အတြက္ ျဖစ္ေစ ပါဝင္ ေဆာင္ရြက္ရန္ အခြင့္ရွိသည္ဟု ေသာ္လည္းေကာင္း၊ 
+        ကိုယ္တိုင္ေဆာင္ရြက္ရန္ အခြင့္ရွိသည္ ဟုေသာ္လည္းေကာင္းအဓိပၸါယ္ ပိုင္းျခားေကာက္ယူျခင္း မရွိေစရ။'''
+        result = uni2zg.convert(unicode)
+        self.assertEqual(zawgyi, result, "Failed to Convert Article Thirty")
 
 
 if __name__ == "__main__":
