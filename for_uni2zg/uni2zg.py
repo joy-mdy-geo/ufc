@@ -67,6 +67,9 @@ def logical2visual(input):
     # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=waswe_hatoe 7=tawaetoe 8=nga_tat 9=aumyit 10=yaychar
     output = re.sub(u'([\u1000-\u1021])((?:\u103b)?)((?:\u103a)?)((?:\u103c)?)((?:\u103d)?)((?:\u108a)?)((?:\u1031)?)((?:\u1039)?)((?:\u1037)?)((:\u102c)?)', '\\7\\2\\1\\3\\4\\5\\6\\8\\9\\10', output)
 
+    # ngatat and wasapaut
+    output = re.sub(u'\u1038\u1039', u'\u1039\u1038', output)
+
     return output
 
 
