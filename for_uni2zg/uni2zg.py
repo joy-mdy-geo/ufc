@@ -48,7 +48,7 @@ def precompose(input):
     output = re.sub(u'\u100b\u1039\u100c', u'\u1092', output)  # ddlg&twb
     output = re.sub(u'\u100b\u1039\u100b', u'\u1097', output)  # twiceddlg
     output = re.sub(u'\u102b\u103a', u'\u105a', output)  # yaycha_shayhtoe
-    outptu = re.sub(u'\u103d\u103e', u'\u108a', output)  # waswe_hatoe
+    output = re.sub(u'\u103d\u103e', u'\u108a', output)  # waswe_hatoe
 
     # nga_sint
     output = re.sub(u'\u102d\u1036', u'\u108e', output) 
@@ -64,8 +64,8 @@ def precompose(input):
 def logical2visual(input):
     output = input
 
-    # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=tawaetoe 7=nga_tat 8=aumyit 9=yaychar
-    output = re.sub(u'([\u1000-\u1021])((?:\u103b)?)((?:\u103a)?)((?:\u103c)?)((?:\u103d)?)((?:\u1031)?)((?:\u1039)?)((?:\u1037)?)((:\u102c)?)', '\\6\\2\\1\\3\\4\\5\\7\\8\\9', output)
+    # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=waswe_hatoe 7=tawaetoe 8=nga_tat 9=aumyit 10=yaychar
+    output = re.sub(u'([\u1000-\u1021])((?:\u103b)?)((?:\u103a)?)((?:\u103c)?)((?:\u103d)?)((?:\u108a)?)((?:\u1031)?)((?:\u1039)?)((?:\u1037)?)((:\u102c)?)', '\\7\\2\\1\\3\\4\\5\\6\\8\\9\\10', output)
 
     return output
 
@@ -106,7 +106,7 @@ def shape(input):
 
     # aut_myit
     output = re.sub(u'([\u1014\u102f\u1030\u1033\u1034])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1094', output)
-    output = re.sub(u'([\u103c\u103d])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1095', output)
+    output = re.sub(u'([\u103c\u103d\u108a])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1095', output)
 
     # yaguat
     output = re.sub(u'\u101b([\u102f\u1030])', u'\u1090\\1', output)
