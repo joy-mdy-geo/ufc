@@ -222,7 +222,15 @@ class TESTZG2UNI(unittest.TestCase):
         result = uni2zg.convert(unicode)
         self.assertEqual(zawgyi, result, "Failed to Convert Article Sixteen")
 
-
+    def test_article_seventeen(self):
+        unicode = u'''အပိုဒ် ၁၇
+        လူတိုင်းတွင် မိမိ တစ်ဦးချင်းသော်လည်းကောင်း ၊ အခြားသူများနှင့် ဖက်စပ်၍ သော်လည်းကောင်း၊ ပစ္စည်းဥစ္စာ တို့ကို ပိုင်ဆိုင်ရန် အခွင့်အရေးရှိရမည်။ 
+        ဥပဒေအရ မဟုတ်လျှင်၊ မည်သူမျှ မိမိ၏ပစ္စည်းဥစ္စာပိုင်ဆိုင်ခွင့်ကို စွန့်လွှတ်ခြင်း မခံစေရ။'''
+        zawgyi = u'''အပိုဒ္ ၁၇
+        လူတိုင္းတြင္ မိမိ တစ္ဦးခ်င္းေသာ္လည္းေကာင္း ၊ အျခားသူမ်ားႏွင့္ ဖက္စပ္၍ ေသာ္လည္းေကာင္း၊ ပစၥည္းဥစၥာ တို႔ကို ပိုင္ဆိုင္ရန္ အခြင့္အေရးရွိရမည္။ 
+        ဥပေဒအရ မဟုတ္လၽွင္၊ မည္သူမၽွ မိမိ၏ပစၥည္းဥစၥာပိုင္ဆိုင္ခြင့္ကို စြန႔္လႊတ္ျခင္း မခံေစရ။'''
+        result = uni2zg.convert(unicode)
+        self.assertEqual(zawgyi, result, "Failed to Convert Article Seventeen")
 
 
 if __name__ == "__main__":
