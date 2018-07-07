@@ -53,7 +53,7 @@ def precompose(input):
     output = re.sub(u'\u1039\u1019', u'\u107c', output)  # ma
     output = re.sub(u'\u1039\u101c', u'\u1085', output)  # la
     output = re.sub(u'\u100f\u1039\u100d', u'\u1091', output)  # ng&dg
-    output = re.sub(u'\u100b\u1039\u100c', u'\u1092', output)  # ddlg&twb
+    output = re.sub(u'\u100b\u106d', u'\u1092', output)  # ddlg&twb
     output = re.sub(u'\u100b\u1039\u100b', u'\u1097', output)  # twiceddlg
     output = re.sub(u'\u102b\u103a', u'\u105a', output)  # yaycha_shayhtoe
     output = re.sub(u'\u103d\u103e', u'\u108a', output)  # waswe_hatoe
@@ -121,6 +121,9 @@ def shape(input):
 
     # yaguat
     output = re.sub(u'\u101b([\u102f\u1030])', u'\u1090\\1', output)
+
+    # nya
+    output = re.sub(u'\u100a(\u108a)', u'\u106b\\1', output)  # with waswe_hatoe
 
     return output
 
