@@ -82,6 +82,12 @@ def shape(input):
     output = re.sub(u'([\u103b\u107e\u107f\u1080])([\u1000-\u1021])\u102f', u'\\1\\2\u1033', output)  # yayit&1cn
     output = re.sub(u'(\u103a)((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # yapint&1cn
 
+    # hatoe
+    output = re.sub(u'\u100a\u103d', u'\u100a\u1087', output) # nya with hatoe
+
+    # oo
+    output = re.sub(u'\u1009(\u1039)', u'\u1025\\1', output)  # nyapyat_to_oo
+
     # ya_pint
     output = re.sub(u'\u103a([\u103c\u103d])', u'\u107d\\1', output)  # with hatoe
 
