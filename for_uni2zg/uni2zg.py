@@ -90,7 +90,7 @@ def shape(input):
     output = re.sub(u'([\u1065-\u1069])((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # 1cn with prsint before from salone_samyintswe
     output = re.sub(u'([\u106c-\u107c])((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # 1cn with prsint before from ttlg_ma
     output = re.sub(u'([\u1085\u1093])((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # 1cn with prsint before la and bagone
-    output = re.sub(u'([\u1060-\u1063])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before
+    output = re.sub(u'([\u1060-\u1063])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before from kagyi_gagyi
     output = re.sub(u'([\u1065-\u1069])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before from salone_samyintswe
     output = re.sub(u'([\u106c-\u107c])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before from ttlg_ma
     output = re.sub(u'([\u1085\u1093])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before la and bagone
@@ -106,6 +106,10 @@ def shape(input):
 
     # nag_nge_apyat
     output = re.sub(u'\u1014([\u103d\u103c])', u'\u108f\\1', output)
+    output = re.sub(u'\u1014([\u1060-\u1063])', u'\u108f\\1', output)  # 2cn with prsint before from kagyi_gagyi
+    output = re.sub(u'\u1014([\u1065-\u1069])', u'\u108f\\1', output)  # 2cn with prsint before from salone_samyintswe
+    output = re.sub(u'\u1014([\u106c-\u107c])', u'\u108f\\1', output)  # 2cn with prsint before from ttlg_ma
+    output = re.sub(u'\u1014([\u1085\u1093])', u'\u108f\\1', output)  # 2cn with prsint before la and bagone
 
     # aut_myit
     output = re.sub(u'([\u1014\u102f\u1030\u1033\u1034])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1094', output)
