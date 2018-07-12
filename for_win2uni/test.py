@@ -305,6 +305,28 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article TwentyFive")
 
+    def test_article_twentysix(self):
+        win = u'''tydk'f 26
+        vlwdkif;onf ynmoif ,ledkifcGihf&Sdonf? tenf;qkH;rlvwef;eSihf tajccH tqihf twef;rsm;wGif ynm oifjum;a&;onf tcrJhjzpf&rnf/ 
+        rlvwef;ynmonf roifrae& ynm jzpf&rnf/ pufrIvufrIynmeSihf toufarG;rI ynmrsm;udk a,bl,stm;jzihf oifjum;&,l edkifap&rnf/ 
+        xdkhjyif txufwef;ynmtwGuf t&nftcsif;udk tajccHjykí wlnDaom tcGihfta&; &&Sdap&rnf/
+        ynmoifjum;a&;udk vlom;wdkh\ p&dkufvu©Pm tjynhft0 wdk;wufrI tjyif? vlhtcGihfta&;eSihf tajccHvGwfvyfcGihf &dkao av;pm;rI wdkhudk &SifoefzGHhjzdk;vmap&ef &nf&G,fí oifjum; ap&rnf/ 
+        ynmoifjum;a&;onf edkifiH tm;vkH; wdkhwGif vnf;aumif;? vlrsdk;pkrsm; wGifvnf;aumif;? bmoma&;toif;tzGJhrsm;wGif vnf;aumif;? 
+        tcsif;csif;em;vnfrI? onf;cH rIeSihf cifrif&if;eSD;rIwdkhudk tm;ay;&rnf/ 
+        xdkhjyif jidrf;csrf;a&; wnfwHhatmif aqmif&Guf&ef tvdkhiSg? ukvor*¾\ aqmif&GufrIrsm;udkvnf; jzpfajrmuf atmif tm;ay;&rnf/
+        rdbwdkhwGif? rdrdwdkh\ uav;rsm; oif,l&rnhfynm trsdk;tpm;udk a&G;cs,fedkifaom vufOD; tcGihfta&;&Sdonf/'''
+        unicode = u'''အပိုဒ် ၂၆
+        လူတိုင်းသည် ပညာသင် ယူနိုင်ခွင့်ရှိသည်၊ အနည်းဆုံးမူလတန်းနှင့် အခြေခံ အဆင့် အတန်းများတွင် ပညာ သင်ကြားရေးသည် အခမဲ့ဖြစ်ရမည်။ 
+        မူလတန်းပညာသည် မသင်မနေရ ပညာ ဖြစ်ရမည်။ စက်မှုလက်မှုပညာနှင့် အသက်မွေးမှု ပညာများကို ယေဘူယျအားဖြင့် သင်ကြားရယူ နိုင်စေရမည်။ 
+        ထို့ပြင် အထက်တန်းပညာအတွက် အရည်အချင်းကို အခြေခံပြု၍ တူညီသော အခွင့်အရေး ရရှိစေရမည်။
+        ပညာသင်ကြားရေးကို လူသားတို့၏ စရိုက်လက္ခဏာ အပြည့်အဝ တိုးတက်မှု အပြင်၊ လူ့အခွင့်အရေးနှင့် အခြေခံလွတ်လပ်ခွင့် ရိုသေ လေးစားမှု တို့ကို ရှင်သန်ဖွံ့ဖြိုးလာစေရန် ရည်ရွယ်၍ သင်ကြား စေရမည်။ 
+        ပညာသင်ကြားရေးသည် နိုင်ငံ အားလုံး တို့တွင် လည်းကောင်း၊ လူမျိုးစုများ တွင်လည်းကောင်း၊ ဘာသာရေးအသင်းအဖွဲ့များတွင် လည်းကောင်း၊ 
+        အချင်းချင်းနားလည်မှု၊ သည်းခံ မှုနှင့် ခင်မင်ရင်းနှီးမှုတို့ကို အားပေးရမည်။ 
+        ထို့ပြင် ငြိမ်းချမ်းရေး တည်တံ့အောင် ဆောင်ရွက်ရန် အလို့ငှါ၊ ကုလသမဂ္ဂ၏ ဆောင်ရွက်မှုများကိုလည်း ဖြစ်မြောက် အောင် အားပေးရမည်။
+        မိဘတို့တွင်၊ မိမိတို့၏ ကလေးများ သင်ယူရမည့်ပညာ အမျိုးအစားကို ရွေးချယ်နိုင်သော လက်ဦး အခွင့်အရေးရှိသည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article TwentySix")
+
 
 if __name__ == "__main__":
     unittest.main()
