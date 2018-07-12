@@ -58,8 +58,16 @@ class TESTZG2UNI(unittest.TestCase):
         rnfoludkrsS nSÚf;yef; eSdyfpufjcif;? odkhwnf;r[kwf &ufpufjurf;jukwfpGm vlrqefpGm *kPfi,fapaom qufqHrI rjyk&? odkhwnf;r[kwf tjypf'Pf ay;jcif;rjyk&/'''
         unicode = u'''အပိုဒ် ၅
         မည်သူကိုမျှ ညှဉ်းပန်း နှိပ်စက်ခြင်း၊ သို့တည်းမဟုတ် ရက်စက်ကြမ်းကြုတ်စွာ လူမဆန်စွာ ဂုဏ်ငယ်စေသော ဆက်ဆံမှု မပြုရ၊ သို့တည်းမဟုတ် အပြစ်ဒဏ် ပေးခြင်းမပြုရ။'''
-        rsult = win2uni.convert(win)
-        self.assertEqual(unicode, rsult, "Failed to Convert Article Five")
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Five")
+
+    def test_article_six(self):
+        win = u'''tydk'f 6
+        vlwdkif;wGif Oya't&mü vlyk*¾dkvfwpfOD; tjzpfjzihf t&mcyfodrf;wGif todtrSwf jykjcif;udk cH,lydkifcGihf&Sdonf/'''
+        unicode = u'''အပိုဒ် ၆
+        လူတိုင်းတွင် ဥပဒေအရာ၌ လူပုဂ္ဂိုလ်တစ်ဦး အဖြစ်ဖြင့် အရာခပ်သိမ်းတွင် အသိအမှတ် ပြုခြင်းကို ခံယူပိုင်ခွင့်ရှိသည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Six")
 
 
 if __name__ == "__main__":
