@@ -24,7 +24,7 @@ def replace(input):
     output = re.sub(u'\u0021', u'\u100d', output)  # da_yin_guat
     output = re.sub(u'\u00a1', u'\u100e', output)  # da_yin_maut
     output = re.sub(u'\u0050', u'\u100f', output)  # na_gyi
-    output = re.sub(u'\u0070', u'\u1010', output)  # da_wen_bu
+    output = re.sub(u'\u0077', u'\u1010', output)  # da_wen_bu
     output = re.sub(u'\u0078', u'\u1011', output)  # ta_sin_htoo
     output = re.sub(u'\u0027', u'\u1012', output)  # da_dway
     output = re.sub(u'\u0022', u'\u1013', output)  # da_aut_chai
@@ -76,7 +76,7 @@ def replace(input):
     output = re.sub(u'\u0038', u'\u1048', output)  # eight
     output = re.sub(u'\u0039', u'\u1049', output)  # nine
 
-    output = output.replace(u'\u003f', u'\u104a')  # pot_ma
+    output = output.replace(u'\u002f', u'\u104b')  # pot_ma
     output = re.sub(u'\u00fc', u'\u004c', output)  # nai
     output = re.sub(u'\u00ed', u'\u104d', output)  # yway
     output = re.sub(u'\u00a4', u'\u104e', output)  # la_guang
@@ -90,7 +90,7 @@ def decompose(input):
     output = input
 
     output = re.sub(u'\u003a', u'\u102b\u103a', output)  # yaychar_shayhtoe
-    output = re.sub(u'\u0024', u'\u1000\u103b\u1015\u103a', output)  # kyat_sign
+    output = output.replace(u'\u0024', u'\u1000\u103b\u1015\u103a')  # kyat_sign
     output = re.sub(u'[\u003c\u003e]', u'\u103c\u103d', output)  # yayit_waswe
     output = re.sub(u'\u0040', u'\u100f\u1039\u100d', output)  # nagyi_sint_tawenbae
     output = re.sub(u'\u0049', u'\u103e\u102f', output)  # hatoe_1chaungngin
@@ -98,7 +98,7 @@ def decompose(input):
     output = re.sub(u'\u0052', u'\u103b\u103d', output)  # yapint_waswe
     output = re.sub(u'\u0054', u'\u103d\u103e', output)  # waswe_hatoe
     output = re.sub(u'\u0057', u'\u103b\u103d\u103e', output)  # yapint_waswe_hatoe
-    output = re.sub(u'\u007c', u'\u100b\u1039\u100c', output)  # ttlg_with_twb
+    output = output.replace(u'\u007c', u'\u100b\u1039\u100c')  # ttlg_with_twb
     output = re.sub(u'\u00aa', u'\u103e\u1030', output)  # hatoe_2cn
 
     # pr_sint
