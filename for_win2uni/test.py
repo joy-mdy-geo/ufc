@@ -227,6 +227,22 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article Twenty")
 
+    def test_article_twentyone(self):
+        win = u'''tydk'f 21
+        vlwdkif;wGif rdrdedkifiH\ tkyfcskyfa&;ü udk,fwdkifjzpfap? vGwfvyfpGm a&G;cs,fvdkufonhf udk,fpm;vS,frsm;rS wpfqihfjzpfap yg0if aqmif&GufedkifcGihf &Sdonf/
+        vlwdkif;wGif rdrd\edkifiH&Sd jynfolh 0efxrf;tzGJhü 0ifa&mufedkif&ef wlnDonhf tcGihf ta&;&Sdonf/
+        jynfoljynfom;wdkh\ qe´onf tkyfcskyf tmPm\ tajccHjzpf&rnf? tqdkyg qe´udk tcsdefumvydkif;jcm;vsuf ppfrSefaoma&G;aumufyGJrsm;jzihf xif&Sm;ap&rnf/ 
+        a&G;aumuf yGJrsm;wGifvnf; vlwdkif;tnDtrsS qe´rJ ay;edkifcGihf &Sd&rnhftjyif ? xdka&G;aumufyGJrsm;udk vsSdkh0Suf rJay; pepfjzihf jzpfap? 
+        tvm;wl vGwfvyfaom rJay;pepf jzihfjzpfap usif;y&rnf/'''
+        unicode = u'''အပိုဒ် ၂၁
+        လူတိုင်းတွင် မိမိနိုင်ငံ၏ အုပ်ချုပ်ရေး၌ ကိုယ်တိုင်ဖြစ်စေ၊ လွတ်လပ်စွာ ရွေးချယ်လိုက်သည့် ကိုယ်စားလှယ်များမှ တစ်ဆင့်ဖြစ်စေ ပါဝင် ဆောင်ရွက်နိုင်ခွင့် ရှိသည်။
+        လူတိုင်းတွင် မိမိ၏နိုင်ငံရှိ ပြည်သူ့ ဝန်ထမ်းအဖွဲ့၌ ဝင်ရောက်နိုင်ရန် တူညီသည့် အခွင့် အရေးရှိသည်။
+        ပြည်သူပြည်သားတို့၏ ဆန္ဒသည် အုပ်ချုပ် အာဏာ၏ အခြေခံဖြစ်ရမည်၊ အဆိုပါ ဆန္ဒကို အချိန်ကာလပိုင်းခြားလျက် စစ်မှန်သောရွေးကောက်ပွဲများဖြင့် ထင်ရှားစေရမည်။ 
+        ရွေးကောက် ပွဲများတွင်လည်း လူတိုင်းအညီအမျှ ဆန္ဒမဲ ပေးနိုင်ခွင့် ရှိရမည့်အပြင် ၊ ထိုရွေးကောက်ပွဲများကို လျှို့ဝှက် မဲပေး စနစ်ဖြင့် ဖြစ်စေ၊ 
+        အလားတူ လွတ်လပ်သော မဲပေးစနစ် ဖြင့်ဖြစ်စေ ကျင်းပရမည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article TwentyOne")
+
 
 if __name__ == "__main__":
     unittest.main()
