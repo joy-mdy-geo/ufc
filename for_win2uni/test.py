@@ -207,7 +207,15 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article Eighteen")
 
-    
+    def test_article_nineteen(self):
+        win = u'''tydk'f 19
+        vlwdkif;wGif vGwfvyfpGm xifjrif ,lqedkifcGihfeSihf vGwfvyfpGm zGihf[ azmfjyedkifcGihf&Sdonf/ tqdkyg tcGihfta&;rsm;ü taeSmihf t,Sufr&SdbJ vGwfvyfpGm xifjrif,lqedkifcGihf yg0if onhftjyif? 
+        edkifiHe,fedrdwfrsm;udk axmufxm;&ef rvdkbJ owif;tajumif;t&meSihf oabmw&m;rsm;udk wenf;enf; jzihf vGwfvyfpGm &Sm,lqnf;yl;edkifcGihf? vufcHedkifcGihfeSihf a0iS jzehfcsdcGihfwdkhvnf; yg0ifonf/'''
+        unicode = u'''အပိုဒ် ၁၉
+        လူတိုင်းတွင် လွတ်လပ်စွာ ထင်မြင် ယူဆနိုင်ခွင့်နှင့် လွတ်လပ်စွာ ဖွင့်ဟ ဖော်ပြနိုင်ခွင့်ရှိသည်။ အဆိုပါ အခွင့်အရေးများ၌ အနှောင့် အယှက်မရှိဘဲ လွတ်လပ်စွာ ထင်မြင်ယူဆနိုင်ခွင့် ပါဝင် သည့်အပြင်၊ 
+        နိုင်ငံနယ်နိမိတ်များကို ထောက်ထားရန် မလိုဘဲ သတင်းအကြောင်းအရာနှင့် သဘောတရားများကို တနည်းနည်း ဖြင့် လွတ်လပ်စွာ ရှာယူဆည်းပူးနိုင်ခွင့်၊ လက်ခံနိုင်ခွင့်နှင့် ဝေငှ ဖြန့်ချိခွင့်တို့လည်း ပါဝင်သည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Nineteen")
 
 
 if __name__ == "__main__":
