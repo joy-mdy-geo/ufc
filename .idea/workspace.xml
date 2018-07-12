@@ -30,13 +30,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="25162" />
+          <entry key="py" value="25403" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="25162" />
+          <entry key="Python" value="25403" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -78,10 +78,10 @@
         <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="724">
-              <caret line="330" column="18" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
+              <caret line="351" column="82" selection-start-line="351" selection-start-column="82" selection-end-line="351" selection-end-column="82" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1531414273418" expanded="true" signature="69:74" ph="..." />
+                <marker date="1531414548849" expanded="true" signature="69:74" ph="..." />
               </folding>
             </state>
           </provider>
@@ -332,10 +332,10 @@
     <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="724">
-          <caret line="330" column="18" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
+          <caret line="351" column="82" selection-start-line="351" selection-start-column="82" selection-end-line="351" selection-end-column="82" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1531414273418" expanded="true" signature="69:74" ph="..." />
+            <marker date="1531414548849" expanded="true" signature="69:74" ph="..." />
           </folding>
         </state>
       </provider>
