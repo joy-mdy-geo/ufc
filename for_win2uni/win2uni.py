@@ -51,6 +51,7 @@ def replace(input):
     output = re.sub(u'\u006d', u'\u102c', output)  # yay_char
     output = re.sub(u'\u0064', u'\u102d', output)  # longgyitin
     output = re.sub(u'\u0044', u'\u102e', output)  # longgyitin_sanke
+    output = re.sub(u'\u1025\u102e', u'\u1026', output)  # oo with longyitinsanke
     output = re.sub(u'[\u004b\u006b]', u'\u102f', output)  # 1_chuang_ngin
     output = re.sub(u'[\u004c\u006c]', u'\u1030', output)  # 2_chuang_ngin
     output = re.sub(u'\u0061', u'\u1031', output)  # ta_wai_htoe
@@ -75,12 +76,16 @@ def replace(input):
     output = re.sub(u'\u0037', u'\u1047', output)  # seven
     output = re.sub(u'\u0038', u'\u1048', output)  # eight
     output = re.sub(u'\u0039', u'\u1049', output)  # nine
+    output = re.sub(u'([\u1041-\u1049])\u101d', u'\\1\u1040', output)  # zero
 
+    output = output.replace(u'\u003f', u'\u104a')  # pot_kalay
     output = output.replace(u'\u002f', u'\u104b')  # pot_ma
-    output = re.sub(u'\u00fc', u'\u004c', output)  # nai
+    output = re.sub(u'\u00fc', u'\u104c', output)  # nai
     output = re.sub(u'\u00ed', u'\u104d', output)  # yway
     output = re.sub(u'\u00a4', u'\u104e', output)  # la_guang
     output = output.replace(u'\u005c', u'\u104f')  # ii
+    output = output.replace(u'\u00ab', u'[')
+    output = output.replace(u'\u00bb', u']')
 
     return output
 
