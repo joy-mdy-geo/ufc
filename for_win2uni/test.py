@@ -165,6 +165,24 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article Fifteen")
 
+    def test_article_sixteen(self):
+        win = u'''tydk'f 16
+        t&G,fa&muf jyD;aom a,musmf; eSihf rdef;rwdkhwGif vlrsdk;udk aomfvnf;aumif;? edkifiHom; tjzpfudk aomfvnf;aumif; udk;uG,fonhf bmomudk aomfvnf;aumif;? 
+        tajumif;jykí cskyfcs,f uehfowfjcif; r&SdbJ? 
+        xdrf;jrm;edkifcGihf eSihf rdom;pkxlaxmifedkifcGihf&Sdonf/ tqdkyg a,musmf;eSihf rdef;r wdkhonf vifr,m;tjzpf aygif;oif;aepÚf tcsdef twGif;ü aomfvnf;aumif;? 
+        tdrfaxmifudk zsufodrf;í uGm&Sif;juonhf tcgüvnf;aumif;? vufxyf aygif;oif; tdrfaxmifjykjcif;eSihf pyfvsÚf;aom wlnDonhf tcGihfta&;rsm;udk &&Sdxdkufonf/
+        owdkhom; eSihf owdkhorD; eSpfOD;eSpfbuf\ vGwfvyfaom oabmqe´&SdrSomvsSif xdrf;jrm;jcif;udk jyk&rnf/
+        rdom;pk wpfckonf vlhtzGJhtpnf;\ obm0usaom tajccHtzGJhwpf&yfjzpfonf? xdkrdom;pkonf vlh tzGJhtpnf;eSihf tpdk;&wdkh\ umuG,fapmihfa&Smufjcif;udk cH,lcGihf&Sdonf/'''
+        unicode = u'''အပိုဒ် ၁၆
+        အရွယ်ရောက် ပြီးသော ယောကျာ်း နှင့် မိန်းမတို့တွင် လူမျိုးကို သော်လည်းကောင်း၊ နိုင်ငံသား အဖြစ်ကို သော်လည်းကောင်း ကိုးကွယ်သည့် ဘာသာကို သော်လည်းကောင်း၊ 
+        အကြောင်းပြု၍ ချုပ်ချယ် ကန့်သတ်ခြင်း မရှိဘဲ၊ 
+        ထိမ်းမြားနိုင်ခွင့် နှင့် မိသားစုထူထောင်နိုင်ခွင့်ရှိသည်။ အဆိုပါ ယောကျာ်းနှင့် မိန်းမ တို့သည် လင်မယားအဖြစ် ပေါင်းသင်းနေစဉ် အချိန် အတွင်း၌ သော်လည်းကောင်း၊ 
+        အိမ်ထောင်ကို ဖျက်သိမ်း၍ ကွာရှင်းကြသည့် အခါ၌လည်းကောင်း၊ လက်ထပ် ပေါင်းသင်း အိမ်ထောင်ပြုခြင်းနှင့် စပ်လျဉ်းသော တူညီသည့် အခွင့်အရေးများကို ရရှိထိုက်သည်။
+        သတို့သား နှင့် သတို့သမီး နှစ်ဦးနှစ်ဘက်၏ လွတ်လပ်သော သဘောဆန္ဒရှိမှသာလျှင် ထိမ်းမြားခြင်းကို ပြုရမည်။
+        မိသားစု တစ်ခုသည် လူ့အဖွဲ့အစည်း၏ သဘာဝကျသော အခြေခံအဖွဲ့တစ်ရပ်ဖြစ်သည်၊ ထိုမိသားစုသည် လူ့ အဖွဲ့အစည်းနှင့် အစိုးရတို့၏ ကာကွယ်စောင့်ရှောက်ခြင်းကို ခံယူခွင့်ရှိသည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Sixteen")
+
 
 if __name__ == "__main__":
     unittest.main()

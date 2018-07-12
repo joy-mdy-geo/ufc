@@ -30,13 +30,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="23429" />
+          <entry key="py" value="23782" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="23429" />
+          <entry key="Python" value="23782" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -68,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="684">
               <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
             </state>
           </provider>
@@ -77,11 +77,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="146" column="18" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
+            <state relative-caret-position="681">
+              <caret line="183" column="78" lean-forward="true" selection-start-line="183" selection-start-column="78" selection-end-line="183" selection-end-column="78" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1531409271162" expanded="true" signature="69:74" ph="..." />
+                <marker date="1531410165139" expanded="true" signature="69:74" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,8 +113,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="140" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -325,18 +324,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="684">
           <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="146" column="18" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="18" />
+        <state relative-caret-position="681">
+          <caret line="183" column="78" lean-forward="true" selection-start-line="183" selection-start-column="78" selection-end-line="183" selection-end-column="78" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1531409271162" expanded="true" signature="69:74" ph="..." />
+            <marker date="1531410165139" expanded="true" signature="69:74" ph="..." />
           </folding>
         </state>
       </provider>
