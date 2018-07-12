@@ -89,6 +89,24 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article Eight")
 
+    def test_article_nine(self):
+        win = u'''tydk'f 9
+        rnfolrsS Oya't& r[kwfaom zrf;qD;jcif;udk jzpfap? cskyfaeSmifjcif;udk jzpfap? jynfeSifjcif;udkjzpfap rcHap&/'''
+        unicode = u'''အပိုဒ် ၉
+        မည်သူမျှ ဥပဒေအရ မဟုတ်သော ဖမ်းဆီးခြင်းကို ဖြစ်စေ၊ ချုပ်နှောင်ခြင်းကို ဖြစ်စေ၊ ပြည်နှင်ခြင်းကိုဖြစ်စေ မခံစေရ။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Nine")
+
+    def test_article_ten(self):
+        win = u'''tydk'f 10
+        tcGihfta&;rsm;eSihf wm0ef 0wÅ&m;rsm;udk tqkH;tjzwfcH&mwGif vnf;aumif;? jypfrIajumihf w&m;pGJqdk pD&if qkH;jzwfcH&mwGif vnf;aumif;? 
+        vlwdkif;onf vGwfvyfí bufrvdkufaom w&m;&kH;awmf\ vltrsm; a&SharSmufwGif rsSwpGm jum;emppfaq;jcif;udk wlnDpGm cHpm; ydkifcGihf&Sdonf/'''
+        unicode = u'''အပိုဒ် ၁ဝ
+        အခွင့်အရေးများနှင့် တာဝန် ဝတ္တရားများကို အဆုံးအဖြတ်ခံရာတွင် လည်းကောင်း၊ ပြစ်မှုကြောင့် တရားစွဲဆို စီရင် ဆုံးဖြတ်ခံရာတွင် လည်းကောင်း၊ 
+        လူတိုင်းသည် လွတ်လပ်၍ ဘက်မလိုက်သော တရားရုံးတော်၏ လူအများ ရှေ့မှောက်တွင် မျှတစွာ ကြားနာစစ်ဆေးခြင်းကို တူညီစွာ ခံစား ပိုင်ခွင့်ရှိသည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Ten")
+
 
 if __name__ == "__main__":
     unittest.main();
