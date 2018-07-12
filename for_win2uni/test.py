@@ -143,6 +143,18 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article Thirteen")
 
+    def test_article_fourteen(self):
+        win = u'''tydk'f 14
+        vlwdkif;onf nSÚf;yef; eSdyfpuf cHae&jcif;rS vGwfuif;&ef tjcm;wdkif;jynf rsm;ü at;csrf;pGm cdkvIHaeedkifcGihf&Sdonf/
+        edkifiHa&;eSihf rywfoufonhf jypfrIrsm;rS aomfvnf;aumif;? ukvor*¾\ &nf&GufcsufeSihf oabmw&m; rIrsm;udk zDqefaom trIrsm;rS aomfvn;faumif;? 
+        trSef ay:ayguf vmaom jypfrIajumihf w&m;pGJqdkjcif; cH&onhf trItcif;rsm;wGif txufyg tcGihfta&;udk tokH;rjykedkifap&/'''
+        unicode = u'''အပိုဒ် ၁၄
+        လူတိုင်းသည် ညှဉ်းပန်း နှိပ်စက် ခံနေရခြင်းမှ လွတ်ကင်းရန် အခြားတိုင်းပြည် များ၌ အေးချမ်းစွာ ခိုလှုံနေနိုင်ခွင့်ရှိသည်။
+        နိုင်ငံရေးနှင့် မပတ်သက်သည့် ပြစ်မှုများမှ သော်လည်းကောင်း၊ ကုလသမဂ္ဂ၏ ရည်ရွက်ချက်နှင့် သဘောတရား မှုများကို ဖီဆန်သော အမှုများမှ သော်လညး်ကောင်း၊ 
+        အမှန် ပေါ်ပေါက် လာသော ပြစ်မှုကြောင့် တရားစွဲဆိုခြင်း ခံရသည့် အမှုအခင်းများတွင် အထက်ပါ အခွင့်အရေးကို အသုံးမပြုနိုင်စေရ။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Fourteen")
+
 
 if __name__ == "__main__":
     unittest.main()
