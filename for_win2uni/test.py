@@ -193,6 +193,22 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article Seventeen")
 
+    def test_article_eighteen(self):
+        win = u'''tydk'f 18
+        vlwdkif;wGif vGwfvyfpGm awG;ac: juHqedkifcGihf? vGwfvyfpGm cH,l&yfwnfedkifcGihf eSihf vGwfvyfpGm ouf0if udk;uG,fedkifcGihf&Sdonf/ 
+        tqdkyg tcGihfta&;rsm;ü rdrdudk;uG,fonhf bmomudk odkhwnf;r[kwf ouf0if,kHjunfcsufudk vGwfvyfpGm ajymif;vJedkifcGihf yg0ifonhf tjyif 
+        rdrd wpfa,mufcsif;jzpfap? tjcm;olrsm;eSihf pkaygif;íjzpfap? jynfoltrsm; a&SharSmufwGif aomfvnf;aumif;? a&SharSmufwGif r[kwfbJ aomfvnf;aumif;? rdrd udk;uG,faom bmomudk 
+        odkhwnf;r[kwf ouf0if ,kHjunfcsufudk vGwfvyf pGm oifjyedkifcGihf? usihfokH;edkifcGihf? 0wfjykudk;uG,fedkifcGihfeSihf aqmufwnf edkifcGihfwdkhvnf; yg0ifonf/'''
+        unicode = u'''အပိုဒ် ၁၈
+        လူတိုင်းတွင် လွတ်လပ်စွာ တွေးခေါ် ကြံဆနိုင်ခွင့်၊ လွတ်လပ်စွာ ခံယူရပ်တည်နိုင်ခွင့် နှင့် လွတ်လပ်စွာ သက်ဝင် ကိုးကွယ်နိုင်ခွင့်ရှိသည်။ 
+        အဆိုပါ အခွင့်အရေးများ၌ မိမိကိုးကွယ်သည့် ဘာသာကို သို့တည်းမဟုတ် သက်ဝင်ယုံကြည်ချက်ကို လွတ်လပ်စွာ ပြောင်းလဲနိုင်ခွင့် ပါဝင်သည့် အပြင် 
+        မိမိ တစ်ယောက်ချင်းဖြစ်စေ၊ အခြားသူများနှင့် စုပေါင်း၍ဖြစ်စေ၊ ပြည်သူအများ ရှေ့မှောက်တွင် သော်လည်းကောင်း၊ ရှေ့မှောက်တွင် မဟုတ်ဘဲ သော်လည်းကောင်း၊ မိမိ ကိုးကွယ်သော ဘာသာကို 
+        သို့တည်းမဟုတ် သက်ဝင် ယုံကြည်ချက်ကို လွတ်လပ် စွာ သင်ပြနိုင်ခွင့်၊ ကျင့်သုံးနိုင်ခွင့်၊ ဝတ်ပြုကိုးကွယ်နိုင်ခွင့်နှင့် ဆောက်တည် နိုင်ခွင့်တို့လည်း ပါဝင်သည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Eighteen")
+
+    
+
 
 if __name__ == "__main__":
     unittest.main()
