@@ -327,6 +327,20 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article TwentySix")
 
+    def test_article_twentyseven(self):
+        win = u'''tydk'f 27
+        vlwdkif;wGif oufqdkif&m ,Úfaus;rI avmuü vGwfvyfpGm yg0ifaqmif &GufedkifcGihf okckrynm&yf rsm;udkvGwfvyfpGmvdkufpm; arGhavsmfedkifcGihf? 
+        odyÜH ynmxGef;um;a&; vkyfief;rsm;wGif vGwfvyfpGm 0ifa&muf vkyfudkif edkifcGihfeSihf xdkynm\ tusdk; tmedoifrsm;udk vGwfvyfpGm cHpm;okH;pGJedkifcGihf &Sdonf/
+        vlwdkif;wGif odyÜHrS jzpfap? pmayrSjzpfap? okckrynmrS jzpfap? rdrdudk,fydkifÚmPfjzihfjuHpnf zefwD;rIrS 
+        jzpfxGef;vmonhf *kPfeSihf aiGaju; tusdk;tjrwfrsm;udk cHpm;&,ledkif&ef tcGihfta&; twGuf umuG,frIudk &&Sd&ef tcGihfta&; &Sdonf/'''
+        unicode = u'''အပိုဒ် ၂၇
+        လူတိုင်းတွင် သက်ဆိုင်ရာ ယဉ်ကျေးမှု လောက၌ လွတ်လပ်စွာ ပါဝင်ဆောင် ရွက်နိုင်ခွင့် သုခုမပညာရပ် များကိုလွတ်လပ်စွာလိုက်စား မွေ့လျော်နိုင်ခွင့်၊ 
+        သိပ္ပံ ပညာထွန်းကားရေး လုပ်ငန်းများတွင် လွတ်လပ်စွာ ဝင်ရောက် လုပ်ကိုင် နိုင်ခွင့်နှင့် ထိုပညာ၏ အကျိုး အာနိသင်များကို လွတ်လပ်စွာ ခံစားသုံးစွဲနိုင်ခွင့် ရှိသည်။
+        လူတိုင်းတွင် သိပ္ပံမှ ဖြစ်စေ၊ စာပေမှဖြစ်စေ၊ သုခုမပညာမှ ဖြစ်စေ၊ မိမိကိုယ်ပိုင်ဉာဏ်ဖြင့်ကြံစည် ဖန်တီးမှုမှ 
+        ဖြစ်ထွန်းလာသည့် ဂုဏ်နှင့် ငွေကြေး အကျိုးအမြတ်များကို ခံစားရယူနိုင်ရန် အခွင့်အရေး အတွက် ကာကွယ်မှုကို ရရှိရန် အခွင့်အရေး ရှိသည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article TwentySeven")
+
 
 if __name__ == "__main__":
     unittest.main()
