@@ -243,6 +243,20 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article TwentyOne")
 
+    def test_article_twentytwo(self):
+        win = u'''tydk'f 22
+        vlwdkif;wGif vlhtzGJhtpnf;\ tzGJh0ifwpfOD;taeeSihf vlrIa&;vkHjckHcGihf&,lydkihfcGihf&Sdonhf tjyifedkifiHa&; judk;
+        yrf;rIjzihfjzpfap? edkifiHwum ylaygif;aqmif&GufrIjzihfjzpfap? 
+        edkifiHtoD;oD;\zGJhpnf;ykHeSihf vnf;aumif;? o,HZmw tiftm;eSihfvnf;aumif; xdkvl\ *kPfodu©meSihf p&dkufvu©Pm vGwfvyfpGm 
+        wdk;wufjrihfrm;a&;twGuf r&Sdrjzpfvdktyfaom pD;yGm;a&;?vlrIa&;eSihf ,Úfaus;rI tcGihfta&;rsm;udk okH;pGJydkifcGihf&Sdonf/'''
+        unicode = u'''အပိုဒ် ၂၂
+        လူတိုင်းတွင် လူ့အဖွဲ့အစည်း၏ အဖွဲ့ဝင်တစ်ဦးအနေနှင့် လူမှုရေးလုံခြုံခွင့်ရယူပိုင့်ခွင့်ရှိသည့် အပြင်နိုင်ငံရေး ကြိုး
+        ပမ်းမှုဖြင့်ဖြစ်စေ၊ နိုင်ငံတကာ ပူပေါင်းဆောင်ရွက်မှုဖြင့်ဖြစ်စေ၊ 
+        နိုင်ငံအသီးသီး၏ဖွဲ့စည်းပုံနှင့် လည်းကောင်း၊ သယံဇာတ အင်အားနှင့်လည်းကောင်း ထိုလူ၏ ဂုဏ်သိက္ခာနှင့် စရိုက်လက္ခဏာ လွတ်လပ်စွာ 
+        တိုးတက်မြင့်မားရေးအတွက် မရှိမဖြစ်လိုအပ်သော စီးပွားရေး၊လူမှုရေးနှင့် ယဉ်ကျေးမှု အခွင့်အရေးများကို သုံးစွဲပိုင်ခွင့်ရှိသည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article TwentyTwo")
+
 
 if __name__ == "__main__":
     unittest.main()
