@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69cc34b5-9bc2-4661-b725-8f6bbd5b6155" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/for_win2uni/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_win2uni/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/for_win2uni/win2uni.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_win2uni/win2uni.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/UDHR-WIN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/UDHR-WIN.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,13 +30,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="21856" />
+          <entry key="py" value="21996" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="21856" />
+          <entry key="Python" value="21996" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -71,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="87" column="44" lean-forward="true" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+            <state relative-caret-position="532">
+              <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -80,11 +77,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+            <state relative-caret-position="665">
+              <caret line="35" column="74" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1531405530555" expanded="true" signature="69:74" ph="..." />
+                <marker date="1531406050829" expanded="true" signature="69:74" ph="..." />
               </folding>
             </state>
           </provider>
@@ -328,18 +325,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="87" column="44" lean-forward="true" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+        <state relative-caret-position="532">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+        <state relative-caret-position="665">
+          <caret line="35" column="74" selection-start-line="35" selection-start-column="74" selection-end-line="35" selection-end-column="74" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1531405530555" expanded="true" signature="69:74" ph="..." />
+            <marker date="1531406050829" expanded="true" signature="69:74" ph="..." />
           </folding>
         </state>
       </provider>
