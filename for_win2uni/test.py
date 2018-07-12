@@ -285,6 +285,26 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article TwentyFour")
 
+    def test_article_twentyfive(self):
+        win = u'''tydk'f 25
+        vlwdkif;wGif rdrdeSihfwuG rdrd\ rdom;pk usef;rma&;eSihfwuG udk,fpdwfeSpfjzm at;csrf;pGm aexdkifedkifa&; twGuf tpmt[m&? t0wftxnf aetdrf? 
+        aq;0g; tultnDeSihf vdktyfonhf vlrI taxmuftyHhrsm; yg0ifaom oihfawmf avsSmufywfonhf vlrI tqihftwef;udk &,lcHpm;cGihf &Sdonf/ 
+        xdkhjyif tvkyfvufrJhjzpfaom tcgü aomfvnf;aumif;? rusef;rrm jzpfaom tcgü aomfvnf;aumif;? udk,ft*Fg rpGrf; roefjzpfaom tcgü aomfvnf;aumif;? 
+        rkqdk;rjzpfaomtcgü aomfvnf;aumif;? touft&G,ftdkrif;aom tcgü aomfvnf;aumif;? rdrdudk,fwdkifu rwwfedkifaom tajumif;ajumihf 0rf;pm &SmrSD;edkifaom 
+        enf;vrf; r&Sdaom tcgü aomfvnf;aumif;? aexdkifpm;aomufa&;twGuf vkHjckHpdwfcs&rI tcGihfta&;&Sdonf/
+        om;onf rdcifrsm;eSihf uav;rsm;onf txl;apmihfa&Smufjcif;eSihf tultnDay;jcif;udk &cGihf &Sdonf/ 
+        Oya't& xdrf;jrm;jcif;jzihfjzpfap tjcm; enf;jzihf jzpfap arG;zGm;aom uav;tm;vkH; onf wlnDaom vlrI umuG,f apmihfa&Smufa&;udk &,l cHpm;ju&rnf/'''
+        unicode = u'''အပိုဒ် ၂၅
+        လူတိုင်းတွင် မိမိနှင့်တကွ မိမိ၏ မိသားစု ကျန်းမာရေးနှင့်တကွ ကိုယ်စိတ်နှစ်ဖြာ အေးချမ်းစွာ နေထိုင်နိုင်ရေး အတွက် အစာအဟာရ၊ အဝတ်အထည် နေအိမ်၊ 
+        ဆေးဝါး အကူအညီနှင့် လိုအပ်သည့် လူမှု အထောက်အပံ့များ ပါဝင်သော သင့်တော် လျှောက်ပတ်သည့် လူမှု အဆင့်အတန်းကို ရယူခံစားခွင့် ရှိသည်။ 
+        ထို့ပြင် အလုပ်လက်မဲ့ဖြစ်သော အခါ၌ သော်လည်းကောင်း၊ မကျန်းမမာ ဖြစ်သော အခါ၌ သော်လည်းကောင်း၊ ကိုယ်အင်္ဂါ မစွမ်း မသန်ဖြစ်သော အခါ၌ သော်လည်းကောင်း၊ 
+        မုဆိုးမဖြစ်သောအခါ၌ သော်လည်းကောင်း၊ အသက်အရွယ်အိုမင်းသော အခါ၌ သော်လည်းကောင်း၊ မိမိကိုယ်တိုင်က မတတ်နိုင်သော အကြောင်းကြောင့် ဝမ်းစာ ရှာမှီးနိုင်သော 
+        နည်းလမ်း မရှိသော အခါ၌ သော်လည်းကောင်း၊ နေထိုင်စားသောက်ရေးအတွက် လုံခြုံစိတ်ချရမှု အခွင့်အရေးရှိသည်။
+        သားသည် မိခင်များနှင့် ကလေးများသည် အထူးစောင့်ရှောက်ခြင်းနှင့် အကူအညီပေးခြင်းကို ရခွင့် ရှိသည်။ 
+        ဥပဒေအရ ထိမ်းမြားခြင်းဖြင့်ဖြစ်စေ အခြား နည်းဖြင့် ဖြစ်စေ မွေးဖွားသော ကလေးအားလုံး သည် တူညီသော လူမှု ကာကွယ် စောင့်ရှောက်ရေးကို ရယူ ခံစားကြရမည်။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article TwentyFive")
+
 
 if __name__ == "__main__":
     unittest.main()
