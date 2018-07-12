@@ -155,6 +155,16 @@ class TESTZG2UNI(unittest.TestCase):
         result = win2uni.convert(win)
         self.assertEqual(unicode, result, "Failed to Convert Article Fourteen")
 
+    def test_article_fifteen(self):
+        win = u'''tydk'f 15
+        vlwdkif;onf? edkifiH wpfedkifiH\ edkifiHom;tjzpf cH,lcGihf&Sdonf/
+        Oya't& r[kwfvsSif rnfolrsS rdrd\ edkifiHom;tjzpfudk pGehfvGSwfjcif; rcHap&? edkifiHom;tjzpf ajymif;vJedkifaomtcGihfta&;udk vnf; jiif;y,fjcif; rcHap&/'''
+        unicode = u'''အပိုဒ် ၁၅
+        လူတိုင်းသည်၊ နိုင်ငံ တစ်နိုင်ငံ၏ နိုင်ငံသားအဖြစ် ခံယူခွင့်ရှိသည်။
+        ဥပဒေအရ မဟုတ်လျှင် မည်သူမျှ မိမိ၏ နိုင်ငံသားအဖြစ်ကို စွန့်လွှတ်ခြင်း မခံစေရ၊ နိုင်ငံသားအဖြစ် ပြောင်းလဲနိုင်သောအခွင့်အရေးကို လည်း ငြင်းပယ်ခြင်း မခံစေရ။'''
+        result = win2uni.convert(win)
+        self.assertEqual(unicode, result, "Failed to Convert Article Fifteen")
+
 
 if __name__ == "__main__":
     unittest.main()
