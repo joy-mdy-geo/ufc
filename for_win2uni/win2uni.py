@@ -76,7 +76,7 @@ def replace(input):
     output = re.sub(u'\u0037', u'\u1047', output)  # seven
     output = re.sub(u'\u0038', u'\u1048', output)  # eight
     output = re.sub(u'\u0039', u'\u1049', output)  # nine
-    output = re.sub(u'([\u1041-\u1049])\u101d', u'\\1\u1040', output)  # zero
+    #output = re.sub(u'([\u1041-\u1049])\u101d', u'\\1\u1040', output)  # zero
 
     output = output.replace(u'\u003f', u'\u104a')  # pot_kalay
     output = output.replace(u'\u002f', u'\u104b')  # pot_ma
