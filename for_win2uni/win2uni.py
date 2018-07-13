@@ -16,7 +16,6 @@ def replace(input):
     output = re.sub(u'\u0070', u'\u1005', output)  # sa_lone
     output = re.sub(u'\u0071', u'\u1006', output)  # sa_lane
     output = re.sub(u'\u005A', u'\u1007', output)  # za_gwe
-    output = re.sub(u'\u1005\u0073', u'\u1008', output)  # za_myit_zwe
     output = re.sub(u'\u00da', u'\u1009', output)  # nya_pyat
     output = re.sub(u'[\u006e\u00f1]', u'\u100a', output)  # nya
     output = re.sub(u'\u0023', u'\u100b', output)  # ta_ta_lin_gyake
@@ -61,6 +60,7 @@ def replace(input):
     output = re.sub(u'\u003b', u'\u1038', output)  # wa_sa_paut
     output = re.sub(u'\u0066', u'\u103a', output)  # nga_tat
     output = re.sub(u'[\u0073\u00df]', u'\u103b', output)  # ya_pint
+    output = re.sub(u'\u1005\u103b', u'\u1008', output)  # za_myit_zwe
     output = re.sub(u'[\u006A\u0042\u004d\u004e\u0060\u007e]', u'\u103c', output)  # ya_yit
     output = re.sub(u'\u0047', u'\u103d', output)  # wa_swe
     output = re.sub(u'[\u0053\u00a7]', u'\u103e', output)  # ha_toe
