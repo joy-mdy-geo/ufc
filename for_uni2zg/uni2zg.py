@@ -20,12 +20,12 @@ def precompose(input):
     output = input
 
     # nga_sint
-    output = re.sub(u'\u102d\u1036', u'\u108e', output)
+    output = re.sub(u'\u102d\u1036\u1039', u'\u108e', output)
     output = re.sub(u'\u1004\u103a\u1039', u'\u1064', output)
     output = re.sub(u'(\u1064)([\u1000-\u1021])', '\\2\\1', output)
-    output = re.sub(u'\u1064([\u1000-\u1021])\u102d', u'\\1\u108b', output)
-    output = re.sub(u'\u1064([\u1000-\u1021])\u102e', u'\\1\u108c', output)
-    output = re.sub(u'\u1064([\u1000-\u1021])\u1036', u'\\1\u108d', output)
+    output = re.sub(u'([\u1000-\u1021])\u1064\u102d', u'\\1\u108b', output)
+    output = re.sub(u'([\u1000-\u1021])\u1064\u102e', u'\\1\u108c', output)
+    output = re.sub(u'([\u1000-\u1021])\u1064\u1036', u'\\1\u108d', output)
 
     # pr_sint
     output = re.sub(u'\u1039\u1000', u'\u1060', output)  # ka_gyi

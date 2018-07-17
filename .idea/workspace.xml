@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69cc34b5-9bc2-4661-b725-8f6bbd5b6155" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/for_win2uni/win2uni.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_win2uni/win2uni.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for_uni2zg/uni2zg.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_uni2zg/uni2zg.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="py" value="14" />
+          <entry key="py" value="20" />
           <entry key="regexp" value="1" />
           <entry key="txt" value="3" />
         </counts>
@@ -24,19 +25,19 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="14" />
+          <entry key="Python" value="20" />
           <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="25563" />
+          <entry key="py" value="33495" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="25563" />
+          <entry key="Python" value="33495" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -47,16 +48,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for_uni2zg/uni2zg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="190">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/for_win2uni/main.py">
+        <entry file="file://$PROJECT_DIR$/for_uni2win/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="285">
               <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#122#135#0" expanded="true" />
@@ -66,22 +67,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
+        <entry file="file://$PROJECT_DIR$/for_uni2win/uni2win.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+            <state relative-caret-position="646">
+              <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
+        <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6802">
-              <caret line="358" column="10" selection-start-line="358" selection-start-column="10" selection-end-line="358" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="686">
+              <caret line="128" column="37" lean-forward="true" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -104,10 +102,12 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/zg2uni.py" />
         <option value="$PROJECT_DIR$/for_uni2zg/test.py" />
-        <option value="$PROJECT_DIR$/for_uni2zg/uni2zg.py" />
         <option value="$PROJECT_DIR$/for_win2uni/main.py" />
         <option value="$PROJECT_DIR$/for_win2uni/test.py" />
+        <option value="$PROJECT_DIR$/for_uni2win/main.py" />
         <option value="$PROJECT_DIR$/for_win2uni/win2uni.py" />
+        <option value="$PROJECT_DIR$/for_uni2zg/uni2zg.py" />
+        <option value="$PROJECT_DIR$/for_uni2win/uni2win.py" />
       </list>
     </option>
   </component>
@@ -128,6 +128,11 @@
             <path>
               <item name="ufc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ufc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ufc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ufc" type="462c0819:PsiDirectoryNode" />
+              <item name="for_uni2win" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ufc" type="b2602c69:ProjectViewProjectNode" />
@@ -236,7 +241,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29166666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2991453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -304,16 +309,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_uni2zg/uni2zg.py">
+    <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="6783">
+          <caret line="358" column="10" selection-start-line="358" selection-start-column="10" selection-end-line="358" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/for_win2uni/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="128" column="37" lean-forward="true" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_uni2win/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
             <element signature="e#122#135#0" expanded="true" />
@@ -321,20 +340,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
+    <entry file="file://$PROJECT_DIR$/for_uni2zg/uni2zg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6802">
-          <caret line="358" column="10" selection-start-line="358" selection-start-column="10" selection-end-line="358" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
+    <entry file="file://$PROJECT_DIR$/for_uni2win/uni2win.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        <state relative-caret-position="646">
+          <caret line="151" column="17" selection-start-line="151" selection-start-column="17" selection-end-line="151" selection-end-column="17" />
         </state>
       </provider>
     </entry>
