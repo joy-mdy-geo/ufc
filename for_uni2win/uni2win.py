@@ -111,7 +111,7 @@ def precompose(input):
     output = re.sub(u'\u1039\u0023', u'\u00b3', output)  # ddlg
     output = re.sub(u'\u1039\u0027', u'\u00b4', output)  # da_dway
     output = re.sub(u'\u0021\u1039\u00a1', u'\u00b9', output)  # dyg_dym
-    output = output.replace(u'\u1039\u002a', u'\u00b3')  # ga_nge
+    output = output.replace(u'\u1039\u002a', u'\u00be')  # ga_nge
     output = re.sub(u'\u1039\u0041', u'\u00c1', output)  # ba_lat_chai
     output = re.sub(u'\u1039\u0077', u'\u00c5', output)  # da_wen_bu
     output = re.sub(u'\u1039\u005a', u'\u00c6', output)  # za_gwe
@@ -174,6 +174,8 @@ def shape(input):
     output = re.sub(u'\u103c([\u1000-\u1021])\u006b', u'\u00fb\\1', output)  # yayit_with_1cn
     output = re.sub(u'([\u006a\u0042\u004d\u004e\u0060])([\u1000-\u1021])((?:[\u102d\u102e])?)((?:\u0047)?)\u006b', u'\\1\\2\\3\\4\u004b', output)  # 1cn
     output = re.sub(u'([\u006a\u0042\u004d\u004e\u0060])([\u1000-\u1021])((?:[\u102d\u102e])?)((?:\u0047)?)\u006c', u'\\1\\2\\3\\4\u004c', output)  # 2cn
+    output = re.sub(u'\u1039([\u1000-\u1021])((?:[\u102d\u102e])?)\u006b', u'\u1039\\1\\2\u004b', output)  # 1cn
+    output = re.sub(u'\u1039([\u1000-\u1021])((?:[\u102d\u102e])?)\u006c', u'\u1039\\1\\2\u004c', output)  # 1cn
 
     # hatoe
     output = re.sub(u'\u100a\u103e', u'\u100a\u00a7', output)  # nya with hatoe
