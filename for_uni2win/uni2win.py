@@ -2,6 +2,7 @@
 
 import re
 
+
 def replace(input):
     output = input
 
@@ -74,7 +75,7 @@ def replace(input):
     output = re.sub(u'\u104c', u'\u00fc', output)  # nai
     output = re.sub(u'\u104d', u'\u00ed', output)  # yue
     output = re.sub(u'\u104e', u'\u00a4', output)  # la_guang
-    output = re.sub(u'\u104f', u'\u005c', output)  # at_kayar_ee
+    output = output.replace(u'\u104f', u'\u005c')  # at_kayar_ee
 
     return output
 
@@ -136,7 +137,7 @@ def logical2visual(input):
     output = input
 
     # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=tawaetoe 7=nga_tat 8=aumyit 19=yaychar
-    output = re.sub(u'([\u1000-\u1021])((?:\u103b)?)((?:\u103a)?)((?:\u103c)?)((?:\u103d)?)((?:\u1031)?)((?:\u1039)?)((?:\u1037)?)((:\u102c)?)','\\6\\2\\1\\3\\4\\5\\7\\8\\9', output)
+    output = re.sub(u'([\u1000-\u1021])((?:\u103c)?)((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1031)?)((?:\u103a)?)((?:\u1037)?)((:\u102c)?)','\\6\\2\\1\\3\\4\\5\\7\\8\\9', output)
 
     # ngatat and wasapaut
     output = re.sub(u'\u1038\u1039', u'\u1039\u1038', output)
