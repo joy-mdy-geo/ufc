@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69cc34b5-9bc2-4661-b725-8f6bbd5b6155" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/for_uni2win/uni2win.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_uni2win/uni2win.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for_win2uni/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_win2uni/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/for_win2uni/win2uni.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_win2uni/win2uni.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/UDHR-WIN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/UDHR-WIN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/myfinaloutput(win2uni).txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/myfinaloutput(win2uni).txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +20,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="py" value="20" />
+          <entry key="py" value="21" />
           <entry key="regexp" value="1" />
           <entry key="txt" value="3" />
         </counts>
@@ -25,19 +29,19 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="20" />
+          <entry key="Python" value="21" />
           <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="34702" />
+          <entry key="py" value="34928" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="34702" />
+          <entry key="Python" value="34928" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -48,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for_uni2zg/uni2zg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
+            <state relative-caret-position="1862">
               <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
             </state>
           </provider>
@@ -66,20 +70,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for_uni2win/uni2win.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1831">
-              <caret line="177" column="72" selection-start-line="177" selection-start-column="72" selection-end-line="177" selection-end-column="72" />
+            <state relative-caret-position="131">
+              <caret line="155" selection-start-line="155" selection-end-line="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1023">
+              <caret line="153" column="4" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
+        <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2432">
-              <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+            <state relative-caret-position="297">
+              <caret line="24" column="115" selection-start-line="24" selection-start-column="115" selection-end-line="24" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -103,15 +116,15 @@
         <option value="$PROJECT_DIR$/zg2uni.py" />
         <option value="$PROJECT_DIR$/for_uni2zg/test.py" />
         <option value="$PROJECT_DIR$/for_win2uni/main.py" />
-        <option value="$PROJECT_DIR$/for_win2uni/test.py" />
         <option value="$PROJECT_DIR$/for_uni2win/main.py" />
-        <option value="$PROJECT_DIR$/for_win2uni/win2uni.py" />
         <option value="$PROJECT_DIR$/for_uni2zg/uni2zg.py" />
         <option value="$PROJECT_DIR$/for_uni2win/uni2win.py" />
+        <option value="$PROJECT_DIR$/for_win2uni/test.py" />
+        <option value="$PROJECT_DIR$/for_win2uni/win2uni.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="458" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
@@ -121,6 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,7 +254,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3028846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31036323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -309,17 +322,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6783">
-          <caret line="358" column="10" selection-start-line="358" selection-start-column="10" selection-end-line="358" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/for_win2uni/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_uni2zg/uni2zg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1862">
+          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -333,24 +346,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2432">
-          <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/for_uni2zg/uni2zg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="98" column="42" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/for_uni2win/uni2win.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1831">
-          <caret line="177" column="72" selection-start-line="177" selection-start-column="72" selection-end-line="177" selection-end-column="72" />
+        <state relative-caret-position="131">
+          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_win2uni/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="24" column="115" selection-start-line="24" selection-start-column="115" selection-end-line="24" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_win2uni/win2uni.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1023">
+          <caret line="153" column="4" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="4" />
         </state>
       </provider>
     </entry>
