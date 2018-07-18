@@ -263,5 +263,19 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty One")
 
+    def test_article_twentytwo(self):
+        unicode = u'''အပိုဒ် ၂၂
+        လူတိုင်းတွင် လူ့အဖွဲ့အစည်း၏ အဖွဲ့ဝင်တစ်ဦးအနေနှင့် လူမှုရေးလုံခြုံခွင့်ရယူပိုင့်ခွင့်ရှိသည့် အပြင်နိုင်ငံရေး ကြိုးပမ်းမှုဖြင့်ဖြစ်စေ၊ 
+        နိုင်ငံတကာ ပူပေါင်းဆောင်ရွက်မှုဖြင့်ဖြစ်စေ၊ နိုင်ငံအသီးသီး၏ဖွဲ့စည်းပုံနှင့် လည်းကောင်း၊ သယံဇာတ အင်အားနှင့်လည်းကောင်း 
+        ထိုလူ၏ ဂုဏ်သိက္ခာနှင့် စရိုက်လက္ခဏာ လွတ်လပ်စွာ တိုးတက်မြင့်မားရေးအတွက် မရှိမဖြစ်လိုအပ်သော စီးပွားရေး၊လူမှုရေးနှင့် 
+        ယဉ်ကျေးမှု အခွင့်အရေးများကို သုံးစွဲပိုင်ခွင့်ရှိသည်။'''
+        win = u'''tydk'f 22
+        vlwdkif;wGif vlYtzGJUtpnf;\ tzGJU0ifwpfOD;taeESihf vlrIa&;vkHûcHcGihf&,lydkihfcGihf&Sdonhf tjyifEdkifiHa&; BudK;yrf;rIjzihfjzpfap? 
+        EdkifiHwum ylaygif;aqmif½GufrIjzihfjzpfap? EdkifiHtoD;oD;\zGJUpnf;ykHESihf vnf;aumif;? o,HZmw tiftm;ESihfvnf;aumif; 
+        xdkvl\ *kPfodu©mESihf p½dkufvu©Pm vGwfvyfpGm wdk;wufjrihfrm;a&;twGuf r&Sdrjzpfvdktyfaom pD;yGm;a&;?vlrIa&;ESihf 
+        ,Ofaus;rI tcGihfta&;rsm;udk okH;pGJydkifcGihf&Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Twenty Two")
+
 if __name__ == "__main__":
     unittest.main()
