@@ -327,5 +327,27 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty Five")
 
+    def test_article_twentysix(self):
+        unicode = u'''အပိုဒ် ၂၆
+        လူတိုင်းသည် ပညာသင် ယူနိုင်ခွင့်ရှိသည်၊ အနည်းဆုံးမူလတန်းနှင့် အခြေခံ အဆင့် အတန်းများတွင် ပညာ သင်ကြားရေးသည် အခမဲ့ဖြစ်ရမည်။ 
+        မူလတန်းပညာသည် မသင်မနေရ ပညာ ဖြစ်ရမည်။ စက်မှုလက်မှုပညာနှင့် အသက်မွေးမှု ပညာများကို ယေဘူယျအားဖြင့် သင်ကြားရယူ နိုင်စေရမည်။ 
+        ထို့ပြင် အထက်တန်းပညာအတွက် အရည်အချင်းကို အခြေခံပြု၍ တူညီသော အခွင့်အရေး ရရှိစေရမည်။
+        ပညာသင်ကြားရေးကို လူသားတို့၏ စရိုက်လက္ခဏာ အပြည့်အဝ တိုးတက်မှု အပြင်၊ လူ့အခွင့်အရေးနှင့် အခြေခံလွတ်လပ်ခွင့် ရိုသေ 
+        လေးစားမှု တို့ကို ရှင်သန်ဖွံ့ဖြိုးလာစေရန် ရည်ရွယ်၍ သင်ကြား စေရမည်။ ပညာသင်ကြားရေးသည် နိုင်ငံ အားလုံး တို့တွင် လည်းကောင်း၊ 
+        လူမျိုးစုများ တွင်လည်းကောင်း၊ ဘာသာရေးအသင်းအဖွဲ့များတွင် လည်းကောင်း၊ အချင်းချင်းနားလည်မှု၊ သည်းခံ မှုနှင့် ခင်မင်ရင်းနှီးမှုတို့ကို အားပေးရမည်။ 
+        ထို့ပြင် ငြိမ်းချမ်းရေး တည်တံ့အောင် ဆောင်ရွက်ရန် အလို့ငှါ၊ ကုလသမဂ္ဂ၏ ဆောင်ရွက်မှုများကိုလည်း ဖြစ်မြောက် အောင် အားပေးရမည်။
+        မိဘတို့တွင်၊ မိမိတို့၏ ကလေးများ သင်ယူရမည့်ပညာ အမျိုးအစားကို ရွေးချယ်နိုင်သော လက်ဦး အခွင့်အရေးရှိသည်။'''
+        win = u'''tydk'f 26
+        vlwdkif;onf ynmoif ,lEdkifcGihf&Sdonf? tenf;qkH;rlvwef;ESihf tajccH tqihf twef;rsm;wGif ynm oifMum;a&;onf tcrJhjzpf&rnf/ 
+        rlvwef;ynmonf roifrae& ynm jzpf&rnf/ pufrIvufrIynmESihf toufarG;rI ynmrsm;udk a,bl,stm;jzihf oifMum;&,l Edkifap&rnf/ 
+        xdkYjyif txufwef;ynmtwGuf t&nftcsif;udk tajccHûyí wlnDaom tcGihfta&; &&Sdap&rnf/
+        ynmoifMum;a&;udk vlom;wdkY\ p½dkufvu©Pm tjynhft0 wdk;wufrI tjyif? vlYtcGihfta&;ESihf tajccHvGwfvyfcGihf ½dkao 
+        av;pm;rI wdkYudk &SifoefzGHUNzdK;vmap&ef &nf½G,fí oifMum; ap&rnf/ ynmoifMum;a&;onf EdkifiH tm;vkH; wdkYwGif vnf;aumif;? 
+        vlrsdK;pkrsm; wGifvnf;aumif;? bmoma&;toif;tzGJUrsm;wGif vnf;aumif;? tcsif;csif;em;vnfrI? onf;cH rIESihf cifrif&if;ESD;rIwdkYudk tm;ay;&rnf/ 
+        xdkYjyif Nidrf;csrf;a&; wnfwHhatmif aqmif½Guf&ef tvdkYiSg? ukvor*¾\ aqmif½GufrIrsm;udkvnf; jzpfajrmuf atmif tm;ay;&rnf/
+        rdbwdkYwGif? rdrdwdkY\ uav;rsm; oif,l&rnhfynm trsdK;tpm;udk a½G;cs,fEdkifaom vufOD; tcGihfta&;&Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Twenty Six")
+
 if __name__ == "__main__":
     unittest.main()
