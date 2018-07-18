@@ -225,5 +225,17 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Eighteen")
 
+    def test_article_nineteen(self):
+        unicode = u'''အပိုဒ် ၁၉
+        လူတိုင်းတွင် လွတ်လပ်စွာ ထင်မြင် ယူဆနိုင်ခွင့်နှင့် လွတ်လပ်စွာ ဖွင့်ဟ ဖော်ပြနိုင်ခွင့်ရှိသည်။ အဆိုပါ အခွင့်အရေးများ၌ 
+        အနှောင့် အယှက်မရှိဘဲ လွတ်လပ်စွာ ထင်မြင်ယူဆနိုင်ခွင့် ပါဝင် သည့်အပြင်၊ နိုင်ငံနယ်နိမိတ်များကို ထောက်ထားရန် မလိုဘဲ 
+        သတင်းအကြောင်းအရာနှင့် သဘောတရားများကို တနည်းနည်း ဖြင့် လွတ်လပ်စွာ ရှာယူဆည်းပူးနိုင်ခွင့်၊ လက်ခံနိုင်ခွင့်နှင့် ဝေငှ ဖြန့်ချိခွင့်တို့လည်း ပါဝင်သည်။'''
+        win = u'''tydk'f 19
+        vlwdkif;wGif vGwfvyfpGm xifjrif ,lqEdkifcGihfESihf vGwfvyfpGm zGihf[ azmfjyEdkifcGihf&Sdonf/ tqdkyg tcGihfta&;rsm;ü 
+        taESmihf t,Sufr&SdbJ vGwfvyfpGm xifjrif,lqEdkifcGihf yg0if onhftjyif? EdkifiHe,fedrdwfrsm;udk axmufxm;&ef rvdkbJ 
+        owif;taMumif;t&mESihf oabmw&m;rsm;udk wenf;enf; jzihf vGwfvyfpGm &Sm,lqnf;yl;EdkifcGihf? vufcHEdkifcGihfESihf a0iS jzeYfcsdcGihfwdkYvnf; yg0ifonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Nineteen")
+
 if __name__ == "__main__":
     unittest.main()
