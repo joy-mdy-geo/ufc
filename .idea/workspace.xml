@@ -31,13 +31,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="36456" />
+          <entry key="py" value="36591" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="36456" />
+          <entry key="Python" value="36591" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -57,11 +57,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for_uni2win/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+            <state relative-caret-position="700">
+              <caret line="127" column="71" selection-start-line="127" selection-start-column="71" selection-end-line="127" selection-end-column="71" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1531907548396" expanded="true" signature="102:107" ph="..." />
+                <marker date="1531907833021" expanded="true" signature="102:107" ph="..." />
               </folding>
             </state>
           </provider>
@@ -225,7 +225,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31410256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31410256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,11 +337,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/for_uni2win/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="109" column="50" selection-start-line="109" selection-start-column="50" selection-end-line="109" selection-end-column="50" />
+        <state relative-caret-position="700">
+          <caret line="127" column="71" selection-start-line="127" selection-start-column="71" selection-end-line="127" selection-end-column="71" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1531907548396" expanded="true" signature="102:107" ph="..." />
+            <marker date="1531907833021" expanded="true" signature="102:107" ph="..." />
           </folding>
         </state>
       </provider>

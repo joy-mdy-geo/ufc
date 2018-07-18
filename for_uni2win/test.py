@@ -111,6 +111,21 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Ten")
 
+    def test_article_eleven(self):
+        unicode = u'''အပိုဒ် ၁၁
+        လူအများ ရှေ့မှောက်၌ ဥပဒေအတိုင်း စစ်ဆေး၍ ပြစ်မှုကျူးလွန်သည်ဟု ထင်ရှား စီရင်ခြင်းခံရသည့် အချိန်အထိ ပြစ်မှုနှင့် 
+        တရားစွဲဆိုခြင်း ခံရသူတိုင်းသည် အပြစ်မဲ့သူဟူ၍ ယူဆ ခြင်းခံထိုက်သည့် အခွင့်အရေးရှိသည်။ ထိုအမှုကို ကြားနာစစ်ဆေးရာဝယ် 
+        စွပ်စွဲခံရသည့် ပြစ်မှုအတွက် ခုခံချေပနိုင်ရန် လိုအပ်သော အခွင့်အရေးများကို ထိုသူအား ပေးပြီး ဖြစ်စေရမည်။
+        လူတစ်ဦးတစ်ယောက်အား နိုင်ငံဥပဒေအရဖြစ်စေ၊ အပြည်ပြည်ဆိုင်ရာ ဥပဒေအရ ဖြစ်စေ၊ ပြစ်မှုမမြောက်သော လုပ်ရပ် သို့မဟုတ် ပျက်ကွက်မှုအရ 
+        ဆွဲဆိုပြစ်ပေးခြင်း မပြုရ။ ထို့အပြင် ပြစ်မှုကျူးလွန်စဉ်အခါက ထိုက်သင့်စေနိုင်သော အပြစ်ဒဏ်ထက်ပိုမိုကြီးလေးသော အပြစ်ဒဏ်ကို ထိုက်သင့်ခြင်းမရှိစေရ။'''
+        win = u'''tydk'f 11
+        vltrsm; a&SUarSmufü Oya'twdkif; ppfaq;í jypfrIusL;vGefonf[k xif&Sm; pD&ifjcif;cH&onhf tcsdeftxd jypfrIESihf 
+        w&m;pGJqdkjcif; cH&olwdkif;onf tjypfrJhol[lí ,lq jcif;cHxdkufonhf tcGihfta&;&Sdonf/ xdktrIudk Mum;emppfaq;&m0,f 
+        pGyfpGJcH&onhf jypfrItwGuf ckcHacsyEdkif&ef vdktyfaom tcGihfta&;rsm;udk xdkoltm; ay;NyD; jzpfap&rnf/
+        vlwpfOD;wpfa,muftm; EdkifiHOya't&jzpfap? tjynfjynfqdkif&m Oya't& jzpfap? jypfrIrajrmufaom vkyf&yf odkYr[kwf ysufuGufrIt& 
+        qGJqdkjypfay;jcif; rûy&/ xdkYtjyif jypfrIusL;vGefpOftcgu xdkufoihfapEdkifaom tjypf'PfxufydkrdkBuD;av;aom tjypf'Pfudk xdkufoihfjcif;r&Sdap&/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Eleven")
 
 if __name__ == "__main__":
     unittest.main()
