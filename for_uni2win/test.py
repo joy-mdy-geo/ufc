@@ -81,6 +81,18 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Seven")
 
+    def test_article_eight(self):
+        unicode = u'''အပိုဒ် ၈
+        ဖွဲ့စည်းပုံ အခြေခံဥပဒေက သော်လည်းကောင်း အခြား ဥပဒေက သော်လည်းကောင်း လူတိုင်းအတွက် ပေးထားသည့် အခြေခံ အခွင့်အရေး များသည် 
+        ချိုးဖောက် ဖျက်ဆီးခြင်းခံခဲ့ရလျှင် ထိုသို့ ချိုးဖောက်ဖျက်ဆီး သော ပြုလုပ်မှုကြောင့် ဖြစ်ပေါ်လာသော နစ်နာချက် အတွက် ထိုသူသည် နိုင်ငံဆိုင်ရာ 
+        အာဏာပိုင်တရားရုံးတွင် ထိရောက်စွာ သက်သာခွင့် ရှိနိုင်စေရမည်။'''
+        win = u'''tydk'f 8
+        zGJUpnf;ykH tajccHOya'u aomfvnf;aumif; tjcm; Oya'u aomfvnf;aumif; vlwdkif;twGuf ay;xm;onhf tajccH tcGihfta&; rsm;onf 
+        csdK;azmuf zsufqD;jcif;cHcJh&vQif xdkodkY csdK;azmufzsufqD; aom ûyvkyfrIaMumihf jzpfay:vmaom epfemcsuf twGuf xdkolonf EdkifiHqdkif&m 
+        tmPmydkifw&m;½kH;wGif xda&mufpGm oufomcGihf &SdEdkifap&rnf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Eight")
+
 
 if __name__ == "__main__":
     unittest.main()
