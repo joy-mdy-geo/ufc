@@ -277,5 +277,23 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty Two")
 
+    def test_article_twentythree(self):
+        unicode = u'''အပိုဒ် ၂၃
+        လူတိုင်းတွင် အလုပ်လုပ် ရန်လည်းကောင်း၊ မိမိနှစ်သက်ရာ အသက်မွေးမှု အလုပ် အကိုင်ကို လွတ်လပ်စွာရွေးချယ်ရန် လည်းကောင်း၊ တရားမျှတ၍ 
+        လုပ်ပျော်သော အလုပ်ခွင်၏ အခြေအနေကို ရရှိရန် လည်းကောင်း၊ အလုပ်လက်မဲ့ ဖြစ်ရခြင်းမှ အကာအကွယ် ရရှိရန် လည်းကောင်း အခွင့်အရေးရှိသည်။
+        လူတိုင်းတွင် ခွဲခြားခြင်းမခံရစေဘဲ၊ တူညီသော အလုပ်အတွက် တူညီသော အခကြေးငွေ ရပိုင်ခွင့်ရှိသည်။
+        အလုပ်လုပ်ကိုင်သည့် လူတိုင်းတွင်၊ မိမိနှင့် မိမိ၏ မိသားစုအတွက် လူ့ဂုဏ်သိက္ခာ နှင့် ညီအောင် နေထိုင် စားသောက်နိုင်ရန်၊ စိတ်ချလောက်သည့်ပြင်၊ 
+        တရား မျှတ၍ လုပ်ပျော်သည့် လစာကြေးငွေ ရပိုင်ခွင့်ရှိသည်။ လိုအပ်ခဲ့လျှင်အခြား နည်းလမ်းများမှ လူမှုရေး အထောက်အပံ့ကိုလည်း ထပ်မံ၍ ရပိုင်ခွင့် ရှိသည်။
+        လူတိုင်းတွင် မိမိအကျိုး ခံစားခွင့်ကို ကာကွယ်ရန် အလုပ်သမား အစည်းအရုံးများ ဖွဲ့စည်းခွင့် ၊ ပါဝင် ဆောင်ရွက်ခွင့် ရှိသည်။'''
+        win = u'''tydk'f 23
+        vlwdkif;wGif tvkyfvkyf &efvnf;aumif;? rdrdESpfouf&m toufarG;rI tvkyf tudkifudk vGwfvyfpGma½G;cs,f&ef vnf;aumif;? w&m;rQwí 
+        vkyfaysmfaom tvkyfcGif\ tajctaeudk &&Sd&ef vnf;aumif;? tvkyfvufrJh jzpf&jcif;rS tumtuG,f &&Sd&ef vnf;aumif; tcGihfta&;&Sdonf/
+        vlwdkif;wGif cGJjcm;jcif;rcH&apbJ? wlnDaom tvkyftwGuf wlnDaom tcaMu;aiG &ydkifcGihf&Sdonf/
+        tvkyfvkyfudkifonhf vlwdkif;wGif? rdrdESihf rdrd\ rdom;pktwGuf vlY*kPfodu©m ESihf nDatmif aexdkif pm;aomufEdkif&ef? pdwfcsavmufonhfjyif? 
+        w&m; rQwí vkyfaysmfonhf vpmaMu;aiG &ydkifcGihf&Sdonf/ vdktyfcJhvQiftjcm; enf;vrf;rsm;rS vlrIa&; taxmuftyHhudkvnf; xyfrHí &ydkifcGihf &Sdonf/
+        vlwdkif;wGif rdrdtusdK; cHpm;cGihfudk umuG,f&ef tvkyform; tpnf;t½kH;rsm; zGJUpnf;cGihf ? yg0if aqmif½GufcGihf &Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Twenty Three")
+
 if __name__ == "__main__":
     unittest.main()
