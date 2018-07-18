@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69cc34b5-9bc2-4661-b725-8f6bbd5b6155" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/for_uni2win/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/for_uni2win/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,13 +30,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="36068" />
+          <entry key="py" value="36335" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="36068" />
+          <entry key="Python" value="36335" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -57,11 +56,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for_uni2win/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
+            <state relative-caret-position="681">
+              <caret line="101" column="71" selection-start-line="101" selection-start-column="71" selection-end-line="101" selection-end-column="71" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1531907050422" expanded="true" signature="102:107" ph="..." />
+                <marker date="1531907305714" expanded="true" signature="102:107" ph="..." />
               </folding>
             </state>
           </provider>
@@ -337,11 +336,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/for_uni2win/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="81" column="70" selection-start-line="81" selection-start-column="70" selection-end-line="81" selection-end-column="70" />
+        <state relative-caret-position="681">
+          <caret line="101" column="71" selection-start-line="101" selection-start-column="71" selection-end-line="101" selection-end-column="71" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1531907050422" expanded="true" signature="102:107" ph="..." />
+            <marker date="1531907305714" expanded="true" signature="102:107" ph="..." />
           </folding>
         </state>
       </provider>
