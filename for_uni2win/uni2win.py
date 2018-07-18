@@ -17,7 +17,7 @@ def replace(input):
     output = re.sub(u'\u1009', u'\u00da', output)  # nya_shay
     output = re.sub(u'\u100a', u'\u006e', output)  # nya
     output = re.sub(u'\u100b', u'\u0023', output)  # tata_lin_gyake
-    output = re.sub(u'\u100c', u'\u005b', output)  # ta_wen_bae
+    output = re.sub(u'\u100c', u'\u0058', output)  # ta_wen_bae
     output = re.sub(u'\u100d', u'\u0021', output)  # da_yin_guat
     output = re.sub(u'\u100e', u'\u00a1', output)  # da_yin_mot
     output = re.sub(u'\u100f', u'\u0050', output)  # na_gyi

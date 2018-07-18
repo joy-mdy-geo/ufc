@@ -373,5 +373,25 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty Eight")
 
+    def test_article_twentynine(self):
+        unicode = u'''အပိုဒ် ၂၉
+        မိမိ၏စရိုက်လက္ခဏာ လွတ်လပ်စွာ ဖွံ့ဖြိုး တိုးတက်နိုင်သည့် တစ်ခုတည်းသော လူ့အသိုက်အဝန်း အတွက်လူတိုင်း၌ တာဝန် ရှိသည်။
+        မိမိ၏ အခွင့်အရေးများနှင့် လွတ်လပ် ခွင့်များကို သုံးစွဲရာတွင် လူတိုင်းသည်၊ အခြားသူများ၏ အခွင့်အရေးများနှင့်လွတ်လပ်ခွင့်များကို
+        အသိအမှတ်ပြု၍ ရိုသေလေးစားစေရန်အလို့ငှာ လည်းကောင်း၊ ဒီမိုကရေစီကျင့်သုံးသော လူ့အဖွဲ့အစည်းတွင် ကိုယ်ကျင့်တရားအပြင်၊ 
+        ရပ်ရွာအေးချမ်းသာယာရေးနှင့် ပြည်သူ့ အကျိုး စီးပွား ဖြစ်ထွန်းရေးတို့ အတွက်၊ တရားမျှတစွာ ကျင့်ဆောင်ရန် အလို့ငှာ လည်းကောင်း၊ 
+        ဥပဒေက ပြဌာန်းထားသည့် ချုပ်ချယ်မှုများဖြင့်သာ ကန့်သတ်ခြင်းခံရမည်။
+        အဆိုပါ အခွင့်အရေးများနှင့် လွတ်လပ် ခွင့်များကို မည်သည့် အမှုကိစ္စတွင်မျှ ကုလသမဂ္ဂ၏ ရည်ရွယ်ချက်များနှင့်လည်းကောင်း၊ 
+        အခြေခံမူများနှင့် လည်းကောင်း ဆန့်ကျင်၍ မသုံးစွဲရ။'''
+        win = u'''tydk'f 29
+        rdrd\p½dkufvu©Pm vGwfvyfpGm zGHUNzdK; wdk;wufEdkifonhf wpfckwnf;aom vlYtodkuft0ef; twGufvlwdkif;ü wm0ef &Sdonf/
+        rdrd\ tcGihfta&;rsm;ESihf vGwfvyf cGihfrsm;udk okH;pGJ&mwGif vlwdkif;onf? tjcm;olrsm;\ tcGihfta&;rsm;ESihfvGwfvyfcGihfrsm;udk
+        todtrSwfûyí ½dkaoav;pm;ap&eftvdkYiSm vnf;aumif;? 'Drdkua&pDusihfokH;aom vlYtzGJUtpnf;wGif udk,fusihfw&m;tjyif? 
+        &yf½Gmat;csrf;om,ma&;ESihf jynfolY tusdK; pD;yGm; jzpfxGef;a&;wdkY twGuf? w&m;rQwpGm usihfaqmif&ef tvdkYiSm vnf;aumif;? 
+        Oya'u jyXmef;xm;onhf csKyfcs,frIrsm;jzihfom ueYfowfjcif;cH&rnf/
+        tqdkyg tcGihfta&;rsm;ESihf vGwfvyf cGihfrsm;udk rnfonhf trIudpöwGifrQ ukvor*¾\ &nf½G,fcsufrsm;ESihfvnf;aumif;? 
+        tajccHrlrsm;ESihf vnf;aumif; qeYfusifí rokH;pGJ&/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Twenty Nine")
+
 if __name__ == "__main__":
     unittest.main()

@@ -31,13 +31,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="38811" />
+          <entry key="py" value="39097" />
           <entry key="regexp" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="38811" />
+          <entry key="Python" value="39097" />
           <entry key="RegExp" value="2" />
         </counts>
       </usages-collector>
@@ -45,23 +45,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for_uni2win/uni2win.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="1672">
               <caret line="88" column="94" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for_uni2win/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="700">
-              <caret line="363" column="77" selection-start-line="363" selection-start-column="77" selection-end-line="363" selection-end-column="77" />
+              <caret line="393" column="78" selection-start-line="393" selection-start-column="78" selection-end-line="393" selection-end-column="78" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <marker date="1531914456217" expanded="true" signature="102:107" ph="..." />
+                <marker date="1531914911034" expanded="true" signature="102:107" ph="..." />
               </folding>
             </state>
           </provider>
@@ -328,21 +328,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_uni2win/uni2win.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="88" column="94" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/for_uni2win/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
-          <caret line="363" column="77" selection-start-line="363" selection-start-column="77" selection-end-line="363" selection-end-column="77" />
+          <caret line="393" column="78" selection-start-line="393" selection-start-column="78" selection-end-line="393" selection-end-column="78" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-            <marker date="1531914456217" expanded="true" signature="102:107" ph="..." />
+            <marker date="1531914911034" expanded="true" signature="102:107" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_uni2win/uni2win.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="88" column="94" selection-start-line="88" selection-start-column="94" selection-end-line="88" selection-end-column="94" />
         </state>
       </provider>
     </entry>
