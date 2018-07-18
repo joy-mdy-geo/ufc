@@ -363,5 +363,15 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty Seven")
 
+    def test_article_twentyeight(self):
+        unicode = u'''အပိုဒ် ၂၈
+        လူတိုင်းသည် ဤကြေညာ စာတမ်းတွင် ဖော်ပြထားသည့် အခွင့်အရေးများ နှင့် လွတ်လပ်ခွင့်များကို အပြည့်အစုံ ရယူနိုင်သော လူမှု ဆက်ဆံရေး 
+        အခြေအနေနှင့် အပြည်ပြည်ဆိုင်ရာ ဆက်ဆံရေး အခြေအနေတို့၏ အကျိုးကျေးဇူးကို ခံစားနိုင်ခွင့် ရှိသည်။'''
+        win = u'''tydk'f 28
+        vlwdkif;onf þaMunm pmwrf;wGif azmfjyxm;onhf tcGihfta&;rsm; ESihf vGwfvyfcGihfrsm;udk tjynhftpkH &,lEdkifaom vlrI qufqHa&; 
+        tajctaeESihf tjynfjynfqdkif&m qufqHa&; tajctaewdkY\ tusdK;aus;Zl;udk cHpm;EdkifcGihf &Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Twenty Eight")
+
 if __name__ == "__main__":
     unittest.main()
