@@ -2,7 +2,7 @@ import unittest
 import uni2zg
 
 
-class TESTZG2UNI(unittest.TestCase):
+class TESTUNI2ZG(unittest.TestCase):
 
     def test_header_one(self):
         zawgyi = u'အျပည္ျပည္ဆိုင္ရာ လူ႔အခြင့္အေရး ေၾကျငာစာတမ္း'

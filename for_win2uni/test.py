@@ -2,7 +2,7 @@ import unittest
 import win2uni
 
 
-class TESTZG2UNI(unittest.TestCase):
+class TESTWIN2UNI(unittest.TestCase):
     def test_artilce_one(self):
         win = u'''tydk'f 1
         vlwdkif;onf wlnD vGwfvyfaom *kPfodu©mjzihf vnf;aumif;? wlnDvGwfvyfaom tcGihfta&;rsm;jzihf vnf;aumif;? arG;zGm;vmolrsm; 

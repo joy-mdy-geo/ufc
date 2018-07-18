@@ -134,7 +134,7 @@ def precompose(input):
 def logical2visual(input):
     output = input
 
-    # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=tawaetoe 7=nga_tat 8=aumyit 19=yaychar
+    # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=tawaetoe 7=nga_tat 8=aumyit 9=yaychar
     output = re.sub(u'([\u1000-\u1021])((?:\u103c)?)((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1031)?)((?:\u103a)?)((?:\u1037)?)((:\u102c)?)','\\6\\2\\1\\3\\4\\5\\7\\8\\9', output)
 
     # ngatat and wasapaut
