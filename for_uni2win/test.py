@@ -247,5 +247,21 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty")
 
+    def test_article_twentyone(self):
+        unicode = u'''အပိုဒ် ၂၁
+        လူတိုင်းတွင် မိမိနိုင်ငံ၏ အုပ်ချုပ်ရေး၌ ကိုယ်တိုင်ဖြစ်စေ၊ လွတ်လပ်စွာ ရွေးချယ်လိုက်သည့် ကိုယ်စားလှယ်များမှ တစ်ဆင့်ဖြစ်စေ ပါဝင် ဆောင်ရွက်နိုင်ခွင့် ရှိသည်။
+        လူတိုင်းတွင် မိမိ၏နိုင်ငံရှိ ပြည်သူ့ ဝန်ထမ်းအဖွဲ့၌ ဝင်ရောက်နိုင်ရန် တူညီသည့် အခွင့် အရေးရှိသည်။
+        ပြည်သူပြည်သားတို့၏ ဆန္ဒသည် အုပ်ချုပ် အာဏာ၏ အခြေခံဖြစ်ရမည်၊ အဆိုပါ ဆန္ဒကို အချိန်ကာလပိုင်းခြားလျက် စစ်မှန်သောရွေးကောက်ပွဲများဖြင့် 
+        ထင်ရှားစေရမည်။ ရွေးကောက် ပွဲများတွင်လည်း လူတိုင်းအညီအမျှ ဆန္ဒမဲ ပေးနိုင်ခွင့် ရှိရမည့်အပြင် ၊ ထိုရွေးကောက်ပွဲများကို 
+        လျှို့ဝှက် မဲပေး စနစ်ဖြင့် ဖြစ်စေ၊ အလားတူ လွတ်လပ်သော မဲပေးစနစ် ဖြင့်ဖြစ်စေ ကျင်းပရမည်။'''
+        win = u'''tydk'f 21
+        vlwdkif;wGif rdrdEdkifiH\ tkyfcsKyfa&;ü udk,fwdkifjzpfap? vGwfvyfpGm a½G;cs,fvdkufonhf udk,fpm;vS,frsm;rS wpfqihfjzpfap yg0if aqmif½GufEdkifcGihf &Sdonf/
+        vlwdkif;wGif rdrd\EdkifiH&Sd jynfolY 0efxrf;tzGJUü 0ifa&mufEdkif&ef wlnDonhf tcGihf ta&;&Sdonf/
+        jynfoljynfom;wdkY\ qE´onf tkyfcsKyf tmPm\ tajccHjzpf&rnf? tqdkyg qE´udk tcsdefumvydkif;jcm;vsuf ppfrSefaoma½G;aumufyGJrsm;jzihf 
+        xif&Sm;ap&rnf/ a½G;aumuf yGJrsm;wGifvnf; vlwdkif;tnDtrQ qE´rJ ay;EdkifcGihf &Sd&rnhftjyif ? xdka½G;aumufyGJrsm;udk 
+        vQdKY0Suf rJay; pepfjzihf jzpfap? tvm;wl vGwfvyfaom rJay;pepf jzihfjzpfap usif;y&rnf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Twenty One")
+
 if __name__ == "__main__":
     unittest.main()
