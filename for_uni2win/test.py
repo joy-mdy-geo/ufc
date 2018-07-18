@@ -179,5 +179,25 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Fifteen")
 
+    def test_article_sixteen(self):
+        unicode = u'''အပိုဒ် ၁၆
+        အရွယ်ရောက် ပြီးသော ယောကျာ်း နှင့် မိန်းမတို့တွင် လူမျိုးကို သော်လည်းကောင်း၊ နိုင်ငံသား အဖြစ်ကို သော်လည်းကောင်း 
+        ကိုးကွယ်သည့် ဘာသာကို သော်လည်းကောင်း၊ အကြောင်းပြု၍ ချုပ်ချယ် ကန့်သတ်ခြင်း မရှိဘဲ၊ ထိမ်းမြားနိုင်ခွင့် နှင့် မိသားစုထူထောင်နိုင်ခွင့်ရှိသည်။ 
+        အဆိုပါ ယောကျာ်းနှင့် မိန်းမ တို့သည် လင်မယားအဖြစ် ပေါင်းသင်းနေစဉ် အချိန် အတွင်း၌ သော်လည်းကောင်း၊ အိမ်ထောင်ကို ဖျက်သိမ်း၍ 
+        ကွာရှင်းကြသည့် အခါ၌လည်းကောင်း၊ လက်ထပ် ပေါင်းသင်း အိမ်ထောင်ပြုခြင်းနှင့် စပ်လျဉ်းသော တူညီသည့် အခွင့်အရေးများကို ရရှိထိုက်သည်။
+        သတို့သား နှင့် သတို့သမီး နှစ်ဦးနှစ်ဘက်၏ လွတ်လပ်သော သဘောဆန္ဒရှိမှသာလျှင် ထိမ်းမြားခြင်းကို ပြုရမည်။
+        မိသားစု တစ်ခုသည် လူ့အဖွဲ့အစည်း၏ သဘာ၀ကျသော အခြေခံအဖွဲ့တစ်ရပ်ဖြစ်သည်၊ ထိုမိသားစုသည် လူ့ အဖွဲ့အစည်းနှင့် 
+        အစိုးရတို့၏ ကာကွယ်စောင့်ရှောက်ခြင်းကို ခံယူခွင့်ရှိသည်။'''
+        win = u'''tydk'f 16
+        t½G,fa&muf NyD;aom a,musmf; ESihf rdef;rwdkYwGif vlrsdK;udk aomfvnf;aumif;? EdkifiHom; tjzpfudk aomfvnf;aumif; 
+        udk;uG,fonhf bmomudk aomfvnf;aumif;? taMumif;ûyí csKyfcs,f ueYfowfjcif; r&SdbJ? xdrf;jrm;EdkifcGihf ESihf rdom;pkxlaxmifEdkifcGihf&Sdonf/ 
+        tqdkyg a,musmf;ESihf rdef;r wdkYonf vifr,m;tjzpf aygif;oif;aepOf tcsdef twGif;ü aomfvnf;aumif;? tdrfaxmifudk zsufodrf;í 
+        uGm&Sif;Muonhf tcgüvnf;aumif;? vufxyf aygif;oif; tdrfaxmifûyjcif;ESihf pyfvsOf;aom wlnDonhf tcGihfta&;rsm;udk &&Sdxdkufonf/
+        owdkYom; ESihf owdkYorD; ESpfOD;ESpfbuf\ vGwfvyfaom oabmqE´&SdrSomvQif xdrf;jrm;jcif;udk ûy&rnf/
+        rdom;pk wpfckonf vlYtzGJUtpnf;\ obm0usaom tajccHtzGJUwpf&yfjzpfonf? xdkrdom;pkonf vlY tzGJUtpnf;ESihf 
+        tpdk;&wdkY\ umuG,fapmihfa&Smufjcif;udk cH,lcGihf&Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Sixteen")
+
 if __name__ == "__main__":
     unittest.main()
