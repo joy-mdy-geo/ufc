@@ -43,6 +43,16 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Three")
 
+    def test_article_four(self):
+        unicode = u'''အပိုဒ် ၄
+        မည်သူကိုမျှ ကျေးကျွန်အဖြစ်၊ သို့တည်းမဟုတ် အစေအပါးအဖြစ်၊ နိုင်ထက်စီးနင်း စေခိုင်းခြင်း မပြုရ၊ လူကို ကျေးကျွန်သဖွယ် အဓမ္မ စေခိုင်းခြင်း၊ 
+        အရောင်းအဝယ် ပြုခြင်းနှင့် ထိုသဘော သက်ရောက်သော လုပ်ငန်းဟူသမျှကို ပိတ်ပင် တားမြစ် ရမည်။'''
+        win = u'''tydk'f 4
+        rnfoludkrQ aus;uReftjzpf? odkYwnf;r[kwf taptyg;tjzpf? EdkifxufpD;eif; apcdkif;jcif; rûy&? vludk aus;uRefozG,f t"r® apcdkif;jcif;? 
+        ta&mif;t0,f ûyjcif;ESihf xdkoabm oufa&mufaom vkyfief;[lorQudk ydwfyif wm;jrpf &rnf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Four")
+
 
 if __name__ == "__main__":
     unittest.main()
