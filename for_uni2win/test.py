@@ -295,5 +295,15 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty Three")
 
+    def test_article_twentyfour(self):
+        unicode = u'''အပိုဒ် ၂၄
+        လူတိုင်းတွင် သင့်မြတ်လျော်ကန်စွာ ကန့်သတ်ထားသည့် အလုပ်လုပ်ချိန် အပြင်၊ လစာနှင့်တကွ အခါကာလအားလျော်စွာ သတ်မှတ် ထားသည့် 
+        အလုပ် အားလပ်ရက်များပါဝင်သည့် အနားယူခွင့်နှင့် အားလပ်ခွင့် ခံစားပိုင်ခွင့် ရှိသည်။'''
+        win = u'''tydk'f 24
+        vlwdkif;wGif oihfjrwfavsmfuefpGm ueYfowfxm;onhf tvkyfvkyfcsdef tjyif? vpmESihfwuG tcgumvtm;avsmfpGm owfrSwf xm;onhf 
+        tvkyf tm;vyf&ufrsm;yg0ifonhf tem;,lcGihfESihf tm;vyfcGihf cHpm;ydkifcGihf &Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Articl Twenty Four")
+
 if __name__ == "__main__":
     unittest.main()
