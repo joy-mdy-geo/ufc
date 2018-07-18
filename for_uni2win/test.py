@@ -153,5 +153,19 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Thirteen")
 
+    def test_article_fourteen(self):
+        unicode = u'''အပိုဒ် ၁၄
+        လူတိုင်းသည် ညှဉ်းပန်း နှိပ်စက် ခံနေရခြင်းမှ လွတ်ကင်းရန် အခြားတိုင်းပြည် များ၌ အေးချမ်းစွာ ခိုလှုံနေနိုင်ခွင့်ရှိသည်။
+        နိုင်ငံရေးနှင့် မပတ်သက်သည့် ပြစ်မှုများမှ သော်လည်းကောင်း၊ ကုလသမဂ္ဂ၏ ရည်ရွက်ချက်နှင့် သဘောတရား မှုများကို 
+        ဖီဆန်သော အမှုများမှ သော်လညး်ကောင်း၊ အမှန် ပေါ်ပေါက် လာသော ပြစ်မှုကြောင့် တရားစွဲဆိုခြင်း ခံရသည့် အမှုအခင်းများတွင် 
+        အထက်ပါ အခွင့်အရေးကို အသုံးမပြုနိုင်စေရ။'''
+        win = u'''tydk'f 14
+        vlwdkif;onf n§Of;yef; ESdyfpuf cHae&jcif;rS vGwfuif;&ef tjcm;wdkif;jynf rsm;ü at;csrf;pGm cdkvIHaeEdkifcGihf&Sdonf/
+        EdkifiHa&;ESihf rywfoufonhf jypfrIrsm;rS aomfvnf;aumif;? ukvor*¾\ &nf½GufcsufESihf oabmw&m; rIrsm;udk 
+        zDqefaom trIrsm;rS aomfvn;faumif;? trSef ay:ayguf vmaom jypfrIaMumihf w&m;pGJqdkjcif; cH&onhf trItcif;rsm;wGif 
+        txufyg tcGihfta&;udk tokH;rûyEdkifap&/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Fourteen")
+
 if __name__ == "__main__":
     unittest.main()
