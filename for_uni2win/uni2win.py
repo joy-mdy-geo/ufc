@@ -193,7 +193,7 @@ def shape(input):
     output = re.sub(u'(\u103d\u103e)\u1037', u'\\1\u0055', output)
 
     # yaguat
-    output = re.sub(u'\u101b([\u102f\u1030])', u'\u00bd\\1', output)
+    output = re.sub(u'\u101b((?:[\u102d\u102e\u1032])?)([\u102f\u1030\u006b\u006c])', u'\u00bd\\1\\2', output)
 
     # nya
     output = re.sub(u'\u100a(\u103d\u103e)', u'\u00f1\\1', output)  # with waswe_hatoe
