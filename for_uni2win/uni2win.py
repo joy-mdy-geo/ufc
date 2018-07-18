@@ -184,7 +184,7 @@ def shape(input):
     output = re.sub(u'\u1009(\u103a)', u'\u1025\\1', output)  # nyapyat_to_oo
 
     # nag_nge_apyat
-    output = re.sub(u'\u1014([\u103d\u103e\u102f\u1033\u006b\u006c])', u'\u0045\\1', output)
+    output = re.sub(u'\u1014((?:[\u102d\u102e\u1032])?)([\u103d\u103e\u102f\u1030\u006b\u006c])', u'\u0045\\1\\2', output)
     output = re.sub(u'\u1014\u1039([\u1000-\u1021])', u'\u0045\u1039\\1', output)  # 2cn with prsint
 
     # aut_myit
