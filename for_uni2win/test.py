@@ -349,5 +349,19 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twenty Six")
 
+    def test_article_twentyseven(self):
+        unicode = u'''အပိုဒ် ၂၇
+        လူတိုင်းတွင် သက်ဆိုင်ရာ ယဉ်ကျေးမှု လောက၌ လွတ်လပ်စွာ ပါဝင်ဆောင် ရွက်နိုင်ခွင့် သုခုမပညာရပ် များကိုလွတ်လပ်စွာလိုက်စား မွေ့လျော်နိုင်ခွင့်၊ 
+        သိပ္ပံ ပညာထွန်းကားရေး လုပ်ငန်းများတွင် လွတ်လပ်စွာ ဝင်ရောက် လုပ်ကိုင် နိုင်ခွင့်နှင့် ထိုပညာ၏ အကျိုး အာနိသင်များကို လွတ်လပ်စွာ ခံစားသုံးစွဲနိုင်ခွင့် ရှိသည်။
+        လူတိုင်းတွင် သိပ္ပံမှ ဖြစ်စေ၊ စာပေမှဖြစ်စေ၊ သုခုမပညာမှ ဖြစ်စေ၊ မိမိကိုယ်ပိုင်ဉာဏ်ဖြင့်ကြံစည် ဖန်တီးမှုမှ ဖြစ်ထွန်းလာသည့် ဂုဏ်နှင့် ငွေကြေး 
+        အကျိုးအမြတ်များကို ခံစားရယူနိုင်ရန် အခွင့်အရေး အတွက် ကာကွယ်မှုကို ရရှိရန် အခွင့်အရေး ရှိသည်။'''
+        win = u'''tydk'f 27
+        vlwdkif;wGif oufqdkif&m ,Ofaus;rI avmuü vGwfvyfpGm yg0ifaqmif ½GufEdkifcGihf okckrynm&yf rsm;udkvGwfvyfpGmvdkufpm; arGUavsmfEdkifcGihf? 
+        odyÜH ynmxGef;um;a&; vkyfief;rsm;wGif vGwfvyfpGm 0ifa&muf vkyfudkif EdkifcGihfESihf xdkynm\ tusdK; tmedoifrsm;udk vGwfvyfpGm cHpm;okH;pGJEdkifcGihf &Sdonf/
+        vlwdkif;wGif odyÜHrS jzpfap? pmayrSjzpfap? okckrynmrS jzpfap? rdrdudk,fydkifÓPfjzihfBuHpnf zefwD;rIrS jzpfxGef;vmonhf *kPfESihf aiGaMu; 
+        tusdK;tjrwfrsm;udk cHpm;&,lEdkif&ef tcGihfta&; twGuf umuG,frIudk &&Sd&ef tcGihfta&; &Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Twenty Seven")
+
 if __name__ == "__main__":
     unittest.main()
