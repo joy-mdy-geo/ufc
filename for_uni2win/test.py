@@ -141,5 +141,17 @@ class TESTUNI2WIN(unittest.TestCase):
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed to Convert Article Twelve")
 
+    def test_article_thirteen(self):
+        unicode = u'''အပိုဒ် ၁၃
+        လူတိုင်းတွင် မိမိ၏နိုင်ငံ နယ်နိမိတ် အတွင်း၌ လွတ်လပ်စွာ သွားလာ ရွှေ့ပြောင်း နိုင်ခွင့်၊ နေထိုင်ခွင့်ရှိသည်။
+        လူတိုင်းတွင် မိမိနေထိုင်ရာ တိုင်းပြည်မှ လည်းကောင်း၊ အခြားတိုင်းပြည်မှလည်းကောင်း ထွက်ခွာ သွားပိုင်ခွင့်ရှိသည့်အပြင်၊မိမိ၏ 
+        တိုင်းပြည်သို့ ပြန်လာ ပိုင်ခွင့်လည်းရှိသည်။'''
+        win = u'''tydk'f 13
+        vlwdkif;wGif rdrd\EdkifiH e,fedrdwf twGif;ü vGwfvyfpGm oGm;vm a½TUajymif; EdkifcGihf? aexdkifcGihf&Sdonf/
+        vlwdkif;wGif rdrdaexdkif&m wdkif;jynfrS vnf;aumif;? tjcm;wdkif;jynfrSvnf;aumif; xGufcGm oGm;ydkifcGihf&Sdonhftjyif?rdrd\ 
+        wdkif;jynfodkY jyefvm ydkifcGihfvnf;&Sdonf/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed to Convert Article Thirteen")
+
 if __name__ == "__main__":
     unittest.main()
