@@ -87,7 +87,6 @@ def precompose(input):
     output = re.sub(u'\u1026', u'\u004f\u0044', output)  # oo_with_longgyitinsanke
     output = re.sub(u'\u1029', u'\u006a\u006f', output)  # aww
     output = re.sub(u'\u102a', u'\u0061\u006a\u006f\u006d\u006f', output)  # aww_with_tawaetoe
-    output = re.sub(u'\u0075\u0073\u0079\u0066', u'\u0024', output)  # kyat
     output = re.sub(u'\u0067\u0066', u'\u003a', output)  # yaychar_shayhtoe
     output = re.sub(u'\u007e\u0047', u'\u003c', output)  # yayit_agyi_with_waswe
     output = re.sub(u'\u0060\u0047', u'\u003e', output)  # yayit_with_waswe
