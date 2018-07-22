@@ -92,6 +92,8 @@ def shape(input):
     output = re.sub(u'([\u103b\u107e\u107f\u1080])([\u1000-\u1021])((?:[\u102d\u102e\u1036])?)\u1030', u'\\1\\2\\3\u1034', output)  # yayit&2cn
     output = re.sub(u'(\u103a)((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # yapint&1cn
     output = re.sub(u'(\u103a)((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # yapint&2cn
+    # output = re.sub(u'(\u103a)([\u103c\u103d])((?:[\u102d\u102e])?)\u102f', u'\\1\\2\\3\u1033', output)  # yapint&1cn real
+    # output = re.sub(u'(\u103a)([\u103c\u103d])((?:[\u102d\u102e])?)\u1030', u"\\1\\2\\3\u1034", output)  # yapint&2cn real
     output = re.sub(u'([\u1060-\u1063])((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # 1cn with prsint before from kagyi_gagyi
     output = re.sub(u'([\u1065-\u1069])((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # 1cn with prsint before from salone_samyintswe
     output = re.sub(u'([\u106c-\u107c])((?:[\u102d\u102e])?)\u102f', u'\\1\\2\u1033', output)  # 1cn with prsint before from ttlg_ma
@@ -100,9 +102,11 @@ def shape(input):
     output = re.sub(u'([\u1065-\u1069])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before from salone_samyintswe
     output = re.sub(u'([\u106c-\u107c])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before from ttlg_ma
     output = re.sub(u'([\u1085\u1093])((?:[\u102d\u102e])?)\u1030', u'\\1\\2\u1034', output)  # 2cn with prsint before la and bagone
+    # output = re.sub(u'\u103d\u102f', u'\u1088', output)  # 1cn_with_hatoe
+    # output = re.sub(u'\u103d\u1030', u'\u1089', output)  # 2cn_with_hatoe
 
     # hatoe
-    output = re.sub(u'\u100a\u103d', u'\u100a\u1087', output) # nya with hatoe
+    output = re.sub(u'\u100a\u103d', u'\u100a\u1087', output)  # nya with hatoe
 
     # oo
     output = re.sub(u'\u1009(\u1039)', u'\u1025\\1', output)  # nyapyat_to_oo
@@ -110,7 +114,14 @@ def shape(input):
     # ya_pint
     output = re.sub(u'\u103a([\u103c\u103d])', u'\u107d\\1', output)  # with hatoe
 
-    # nag_nge_apyat
+    # na_nge_apyat real
+    # output = re.sub(u'\u1014((?:[\u102d\u102e\u1032])?)([\u102f\u1030\u103d\u103c])', u'\u108f\\1\\2', output)
+    # output = re.sub(u'\u1014((?:[\u102d\u102e\u1032])?)([\u1060-\u1063])', u'\u108f\\1\\2', output)   # 2cn with prsint before from kagyi_gagyi
+    # output = re.sub(u'\u1014((?:[\u102d\u102e\u1032])?)([\u1065-\u1069])', u'\u108f\\1\\2', output)   # 2cn with prsint before from salone_samyintswe
+    # output = re.sub(u'\u1014((?:[\u102d\u102e\u1032])?)([\u106c-\u107c])', u'\u108f\\1\\2', output)   # 2cn with prsint before from ttlg_ma
+    # output = re.sub(u'\u1014((?:[\u102d\u102e\u1032])?)([\u1085\u1093])', u'\u108f\\1\\2', output)   # 2cn with prsint before la and bagone
+
+    # na_nge_apyat
     output = re.sub(u'\u1014([\u103d\u103c])', u'\u108f\\1', output)
     output = re.sub(u'\u1014([\u1060-\u1063])', u'\u108f\\1', output)  # 2cn with prsint before from kagyi_gagyi
     output = re.sub(u'\u1014([\u1065-\u1069])', u'\u108f\\1', output)  # 2cn with prsint before from salone_samyintswe
@@ -118,10 +129,11 @@ def shape(input):
     output = re.sub(u'\u1014([\u1085\u1093])', u'\u108f\\1', output)  # 2cn with prsint before la and bagone
 
     # aut_myit
-    output = re.sub(u'([\u1014\u102f\u1030\u1033\u1034])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1094', output)
-    output = re.sub(u'([\u103c\u103d\u108a])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1095', output)
+    output = re.sub(u'([\u1014\u102f\u1030])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1094', output)
+    output = re.sub(u'([\u103c\u103d\u108a\u1033\u1034])((?:[\u1032\u1036])?)\u1037', u'\\1\\2\u1095', output)
 
     # yaguat
+    # output = re.sub(u'\u101b((?:[\u102d\u102e\u1032])?)([\u102f\u1030])', u'\u1090\\1\\2', output)  # real
     output = re.sub(u'\u101b([\u102f\u1030])', u'\u1090\\1', output)
 
     # nya
