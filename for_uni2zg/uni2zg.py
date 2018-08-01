@@ -64,8 +64,8 @@ def precompose(input):
 def logical2visual(input):
     output = input
 
-    # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=waswe_hatoe 7=tawaetoe 8=nga_tat 9=aumyit 10=yaychar
-    output = re.sub(u'([\u1000-\u1021])((?:\u103b)?)((?:\u103a)?)((?:\u103c)?)((?:\u103d)?)((?:\u108a)?)((?:\u1031)?)((?:\u1039)?)((?:\u1037)?)((:\u102c)?)', '\\7\\2\\1\\3\\4\\5\\6\\8\\9\\10', output)
+    # 1=letters 2=pr_sint 3=yayit 4=yapint 5=waswe 6=hatoe 7=waswe_hatoe 8=tawaetoe 9=nga_tat 10=aumyit 11=yaychar
+    output = re.sub(u'([\u1000-\u1021])((?:[\u1060-\u1090])?)((?:\u103b)?)((?:\u103a)?)((?:\u103c)?)((?:\u103d)?)((?:\u108a)?)((?:\u1031)?)((?:\u1039)?)((?:\u1037)?)((:\u102c)?)', '\\8\\3\\1\\4\\5\\6\\2\\7\\9\\10\\11', output)
 
     # ngatat and wasapaut
     output = re.sub(u'\u1038\u1039', u'\u1039\u1038', output)
@@ -82,6 +82,8 @@ def shape(input):
     output = re.sub(u'\u107e([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u1080\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
     output = re.sub(u'\u103b([\u1000-\u1021])(\u103c)', u'\u1081\\1\\2', output)  # yayit with waswe
     output = re.sub(u'\u107e([\u1000-\u1021])(\u103c)', u'\u1082\\1\\2', output)  # yayit_agyi with waswe
+    output = re.sub(u'\u103b([\u1000-\u1021])([\u1060-\u1093])', u'\u1081\\1\\2', output)  # yayit with pr_sint
+    output = re.sub(u'\u107e([\u1000-\u1021])([\u1060-\u1093])', u'\u1082\\1\\2', output)  # yayit_agyi with pr_sint
     output = re.sub(u'\u107f([\u1000-\u1021])([\u102d\u102e\u1036])(\u103c)', u'\u1083\\1\\2\\3', output)  # yayit apyat
     output = re.sub(u'\u1080([\u1000-\u1021])([\u102d\u102e\u1036])(\u103c)', u'\u1084\\1\\2\\3', output)  # yayit_agi apyat
 

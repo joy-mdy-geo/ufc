@@ -133,8 +133,8 @@ def precompose(input):
 def logical2visual(input):
     output = input
 
-    # 1=letters 2=yayit 3=yapint 4=waswe 5=hatoe 6=tawaetoe 7=nga_tat 8=aumyit 9=yaychar
-    output = re.sub(u'([\u1000-\u1021])((?:\u103c)?)((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1031)?)((?:\u103a)?)((?:\u1037)?)((:\u102c)?)','\\6\\2\\1\\3\\4\\5\\7\\8\\9', output)
+    # 1=letters 2=pr_sint 3=yayit 4=yapint 5=waswe 6=hatoe 7=tawaetoe 8=nga_tat 9=aumyit 10=yaychar
+    output = re.sub(u'([\u1000-\u1021])((?:\u1039[\u1000-\u1021])?)((?:\u103c)?)((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1031)?)((?:\u103a)?)((?:\u1037)?)((:\u102c)?)','\\7\\3\\1\\2\\4\\5\\6\\8\\9\\10', output)
 
     # ngatat and wasapaut
     output = re.sub(u'\u1038\u1039', u'\u1039\u1038', output)
@@ -142,7 +142,7 @@ def logical2visual(input):
     # nga_sint
     output = re.sub(u'\u102d\u1036\u1039', u'\u00f0', output)
     output = re.sub(u'\u1004\u103a\u1039', u'\u0046', output)  # normal
-    output = re.sub(u'(\u0046)([\u1000-\u1021])', '\\2\\1', output)
+    output = re.sub(u'(\u0046)((?:\u1031)?)([\u1000-\u1021])', '\\2\\3\\1', output)
     output = re.sub(u'([\u1000-\u1021])\u0046\u102d', u'\\1\u00d8', output)  # with_longyitin
     output = re.sub(u'([\u1000-\u1021])\u0046\u102e', u'\\1\u00d0', output)  # with_longgyitinsanke
     output = re.sub(u'([\u1000-\u1021])\u0046\u1036', u'\\1\u00f8', output)  # with_taytaytin
@@ -159,6 +159,8 @@ def shape(input):
     output = re.sub(u'\u004d([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u0042\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
     output = re.sub(u'\u103c([\u1000-\u1021])(\u103d)', u'\u0060\\1\\2', output)  # yayit with waswe
     output = re.sub(u'\u004d([\u1000-\u1021])(\u103d)', u'\u007e\\1\\2', output)  # yayit_agyi with waswe
+    output = re.sub(u'\u103c([\u1000-\u1021])(\u1039[\u1000-\u1021])', u'\u0060\\1\\2', output)  # yayit with pr_sint
+    output = re.sub(u'\u004d([\u1000-\u1021])(\u1039[\u1000-\u1021])', u'\u007e\\1\\2', output)  # yayit_agyi with pr_sint
 
     # ta/na_chuang_ngin
     output = re.sub(u'([\u1000-\u1007])((?:[\u102d\u102e])?)((?:\u103e)?)\u102f', u'\\1\\2\\3\u006b', output)  # 1cn with some letters

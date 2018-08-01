@@ -33,7 +33,6 @@ def decompose(input):
     output = re.sub(u'([\u1000-\u1021])\u108b', u'\u1064\\1\u102d', output)
     output = re.sub(u'([\u1000-\u1021])\u108c', u'\u1064\\1\u102e', output)
     output = re.sub(u'([\u1000-\u1021])\u108d', u'\u1064\\1\u1036', output)
-    output = re.sub(u'\u1064', u'\u1004\u103a\u1039', output)
     output = re.sub(u'\u108e', u'\u102d\u1036', output)
 
     output = re.sub(u'\u1088', u'\u103e\u102f', output)  # ha_toe and ta_chuang_ngin
@@ -76,11 +75,13 @@ def decompose(input):
 def visual2logical(input):
     # reorder the sequence of characters from visual to logical
     output = input
-    ## 1=tawaetoe 2=yayit 3=letter 4=yapint 5=waswe 6=hatoe 7=aumyit 8=yaychar
-    output = re.sub(u'((?:\u1031)?)((?:\u103c)?)([\u1000-\u1021])((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\2\\4\\5\\6\\1\\7\\8', output)
+    ## 1=tawaetoe 2=yayit 3=nga_sint 4=letter 5=pr_sint 6=yapint 7=waswe 8=hatoe 9=aumyit 10=yaychar
+    output = re.sub(u'((?:\u1031)?)((?:\u103c)?)((?:\u1064)?)([\u1000-\u1021])((?:\u1039[\u1000-\u1021])?)((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1037)?)((?:\u102c)?)', '\\3\\4\\5\\2\\6\\7\\8\\1\\9\\10', output)
     ## for ta/na_chuangngin and longgyitin(sanke)
     output = re.sub(u'(\u102f)([\u102d\u102e])', '\\2\\1', output)
     output = re.sub(u'(\u1030)([\u102d\u102e])', '\\2\\1', output)
+
+    output = re.sub(u'\u1064', u'\u1004\u103a\u1039', output)
 
     return output
 
