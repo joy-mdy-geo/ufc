@@ -140,7 +140,7 @@ def logical2visual(input):
     output = re.sub(u'\u1038\u1039', u'\u1039\u1038', output)
 
     # nga_sint
-    output = re.sub(u'\u102d\u1036\u1039', u'\u00f0', output)
+    output = re.sub(u'\u102d\u1036', u'\u00f0', output)
     output = re.sub(u'\u1004\u103a\u1039', u'\u0046', output)  # normal
     output = re.sub(u'(\u0046)((?:\u1031)?)([\u1000-\u1021])', '\\2\\3\\1', output)
     output = re.sub(u'([\u1000-\u1021])\u0046\u102d', u'\\1\u00d8', output)  # with_longyitin
