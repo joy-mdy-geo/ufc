@@ -1,0 +1,61 @@
+.my-card > .mdl-card__title {
+    background: #46B6A4;
+}
+
+.mdl-mega-footer {
+    padding: 16px 40px;
+    color: white;
+    background-color: rgb(0, 150, 136);
+}
+
+.btn-font-size {
+    font-size: 16px;
+}
+
+.copied {
+    position: absolute;
+    background: #009688;
+    color: #fff;
+    font-weight: bold;
+    z-index: 99;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    padding: 15px;
+    display: none;
+    font-size: 18px;
+}
+
+textarea {
+    height: 270px;
+}
+
+@font-face {
+    font-family: Padauk;
+    font-size: 16px;
+    src: url(../fonts/padauk.ttf);
+}
+
+.font-unicode {
+    font-family: "Padauk", Times, serif;
+}
+
+@font-face {
+    font-family: zawgyione;
+    font-size: 14px;
+    src: url(../fonts/zawgyione.ttf);
+}
+
+.font-zawgyi {
+    font-family: "zawgyione", Times, serif;
+}
+
+@font-face {
+    font-family: WinInnwa;
+    font-size: 50px;
+    src: url(../fonts/innwa.TTF);
+}
+
+.font-win {
+    font-family: "WinInnwa", Times, serif;
+}
