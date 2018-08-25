@@ -11,6 +11,21 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/detect')
+def detect():
+    return render_template('detect.html')
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+@app.route('/faq')
+def faq():
+    return render_template('faq.html')
+
+
 @app.route('/_convert', methods=["POST"])
 def convert():
     from_text = request.form['from_text']
