@@ -15,118 +15,144 @@
     <script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script type="text/javascript">
-        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-    </script>
-
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--teal">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
-        <div class="mdl-layout__header-row">
-            <h3>Universal Font Converter</h3>
+        <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+            <span class="mdl-layout-title">Universal Font Converter</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#home">Home</a>
+                <a class="mdl-navigation__link" href="#detect">Detect Words</a>
+                <a class="mdl-navigation__link" href="#about">About</a>
+                <a class="mdl-navigation__link" href="#faq">FAQ</a>
+            </nav>
+        </div>
+        <div class="mdl-layout__header-row mdl-layout--small-screen-only">
+            <span class="mdl-layout-title">Universal Font Converter</span>
         </div>
         <div class="mdl-layout__header-row">
-            <h5>By Team Geo-Joy</h5>
+            <span class="mdl-layout-title">By Team Geo-Joy</span>
         </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
     </header>
-
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">UFC</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#home">Home</a>
+            <a class="mdl-navigation__link" href="#detect">Detect Words</a>
+            <a class="mdl-navigation__link" href="#about">About</a>
+            <a class="mdl-navigation__link" href="#faq">FAQ</a>
+        </nav>
+    </div>
     <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-            <div class="mdl-grid">
-                <div class="my-card mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <div class="mdl-grid mdl-grid--no-spacing mdl-card__actions ">
-                            <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="from_unicode">
-                                <input type="radio" name="from" id="from_unicode" class="mdl-radio__button"
-                                       value="from_unicode">
-                                <span class="mdl-radio__label">
+        <section class="mdl-layout__tab-panel is-active" id="home">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="my-card mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mdl-grid mdl-grid--no-spacing mdl-card__actions ">
+                                <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect"
+                                       for="from_unicode">
+                                    <input type="radio" name="from" id="from_unicode" class="mdl-radio__button"
+                                           value="from_unicode">
+                                    <span class="mdl-radio__label">
                       <h2 class="mdl-card__title-text mdl-color-text--white">Unicode</h2>
                     </span>
-                            </label>
-                            <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="from_zawgyi">
-                                <input type="radio" name="from" id="from_zawgyi" class="mdl-radio__button"
-                                       value="from_zawgyi"
-                                       checked>
-                                <span class="mdl-radio__label">
+                                </label>
+                                <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect"
+                                       for="from_zawgyi">
+                                    <input type="radio" name="from" id="from_zawgyi" class="mdl-radio__button"
+                                           value="from_zawgyi"
+                                           checked>
+                                    <span class="mdl-radio__label">
                       <h2 class="mdl-card__title-text mdl-color-text--white">Zawgyi</h2>
                     </span>
-                            </label>
-                            <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="from_win">
-                                <input type="radio" name="from" id="from_win" class="mdl-radio__button"
-                                       value="from_win">
-                                <span class="mdl-radio__label">
+                                </label>
+                                <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="from_win">
+                                    <input type="radio" name="from" id="from_win" class="mdl-radio__button"
+                                           value="from_win">
+                                    <span class="mdl-radio__label">
                       <h2 class="mdl-card__title-text mdl-color-text--white">Win</h2>
                     </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
-                                <textarea class="mdl-textfield__input font-zawgyi" type="text"
-                                              id="from_text" name="from_text"></textarea>
-                                <label class="mdl-textfield__label" for="from_text" id="from_text_hint">
-                                    Select encoding and paste here
                                 </label>
                             </div>
-                        </form>
-                    </div>
-                    <div class="mdl-grid mdl-grid--no-spacing mdl-card__actions mdl-card--border">
-                        <a href="#" class="mdl-button mdl-cell mdl-js-button mdl-js-ripple-effect btn-font-size"
-                           id="clear" name="clear">Clear</a>
-                        <a href="#" class="mdl-button mdl-cell mdl-js-button mdl-js-ripple-effect btn-font-size"
-                           id="convert" name="convert">Convert</a>
-                    </div>
-                </div>
-                <div class="my-card mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <div class="mdl-grid mdl-grid--no-spacing mdl-card__actions ">
-                            <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="to_unicode">
-                                <input type="radio" name="to" id="to_unicode" class="mdl-radio__button"
-                                       value="to_unicode"
-                                       checked>
-                                <span class="mdl-radio__label">
-                      <h2 class="mdl-card__title-text mdl-color-text--white">Unicode</h2>
-                    </span>
-                            </label>
-                            <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="to_zawgyi">
-                                <input type="radio" name="to" id="to_zawgyi" class="mdl-radio__button"
-                                       value="to_zawgyi">
-                                <span class="mdl-radio__label">
-                      <h2 class="mdl-card__title-text mdl-color-text--white">Zawgyi</h2>
-                    </span>
-                            </label>
-                            <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="to_win">
-                                <input type="radio" name="to" id="to_win" class="mdl-radio__button" value="to_win">
-                                <span class="mdl-radio__label">
-                      <h2 class="mdl-card__title-text mdl-color-text--white">Win</h2>
-                    </span>
-                            </label>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+                                <textarea class="mdl-textfield__input font-zawgyi" type="text"
+                                          id="from_text" name="from_text"></textarea>
+                                    <label class="mdl-textfield__label" for="from_text" id="from_text_hint">
+                                        Select encoding and paste here
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mdl-grid mdl-grid--no-spacing mdl-card__actions mdl-card--border">
+                            <a href="#" class="mdl-button mdl-cell mdl-js-button mdl-js-ripple-effect btn-font-size"
+                               id="clear" name="clear">Clear</a>
+                            <a href="#" class="mdl-button mdl-cell mdl-js-button mdl-js-ripple-effect btn-font-size"
+                               id="convert" name="convert">Convert</a>
                         </div>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+                    <div class="my-card mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <div class="mdl-grid mdl-grid--no-spacing mdl-card__actions ">
+                                <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect"
+                                       for="to_unicode">
+                                    <input type="radio" name="to" id="to_unicode" class="mdl-radio__button"
+                                           value="to_unicode"
+                                           checked>
+                                    <span class="mdl-radio__label">
+                      <h2 class="mdl-card__title-text mdl-color-text--white">Unicode</h2>
+                    </span>
+                                </label>
+                                <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="to_zawgyi">
+                                    <input type="radio" name="to" id="to_zawgyi" class="mdl-radio__button"
+                                           value="to_zawgyi">
+                                    <span class="mdl-radio__label">
+                      <h2 class="mdl-card__title-text mdl-color-text--white">Zawgyi</h2>
+                    </span>
+                                </label>
+                                <label class="mdl-radio mdl-cell mdl-js-radio mdl-js-ripple-effect" for="to_win">
+                                    <input type="radio" name="to" id="to_win" class="mdl-radio__button"
+                                           value="to_win">
+                                    <span class="mdl-radio__label">
+                      <h2 class="mdl-card__title-text mdl-color-text--white">Win</h2>
+                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
                                     <textarea class="mdl-textfield__input font-unicode" type="text"
                                               id="to_text"
                                               name="to_text"></textarea>
-                                <label class="mdl-textfield__label" for="to_text" id="to_text_hint">
-                                    Converted text will appear here
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect btn-font-size"
-                           id="copy" name="copy">Copy</a>
+                                    <label class="mdl-textfield__label" for="to_text" id="to_text_hint">
+                                        Converted text will appear here
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect btn-font-size"
+                               id="copy" name="copy">Copy</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"></section>
-        </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="detect">
+            <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="about">
+            <div class="page-content"><!-- Your content goes here --></div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="faq">
+            <div class="page-content"><!-- Your content goes here --></div>
+        </section>
 
         <footer class="mdl-mega-footer">
             <div class="mdl-mega-footer--middle-section">
