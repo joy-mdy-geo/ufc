@@ -1,10 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- <link rel="stylesheet" href="../static/assets/css/material.css"> -->
+    <!-- <link rel="stylesheet" href="../static/assets/style.css"> -->
+    <!-- <script src="../static/assets/js/material.js"></script> -->
+    <!-- <script src="../static/assets/js/jquery.js"></script> -->
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/material.css') }}">
+    <script src="{{ url_for('static', filename='assets/js/material.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/app.css') }}">
+    <script src="{{ url_for('static', filename='assets/js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--teal">
+        <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+            <span class="mdl-layout-title">Universal Font Converter</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index">Home</a>
+                <a class="mdl-navigation__link" href="detect">Detect Words</a>
+                <a class="mdl-navigation__link" href="about">About</a>
+                <a class="mdl-navigation__link" href="faq">FAQ</a>
+            </nav>
+        </div>
+        <div class="mdl-layout__header-row mdl-layout--small-screen-only">
+            <span class="mdl-layout-title">Universal Font Converter</span>
+        </div>
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">By Team Geo-Joy</span>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">UFC</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index">Home</a>
+            <a class="mdl-navigation__link" href="detect">Detect Words</a>
+            <a class="mdl-navigation__link" href="about">About</a>
+            <a class="mdl-navigation__link" href="faq">FAQ</a>
+        </nav>
+    </div>
+
+    <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+            <!--<div class="demo-content mdl-color&#45;&#45;white mdl-shadow&#45;&#45;4dp content mdl-color-text&#45;&#45;grey-800 mdl-cell mdl-cell&#45;&#45;8-col">-->
+            <!--<h3>How to install MDL</h3>-->
+            <!--<p>-->
+            <!--Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse-->
+            <!--ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit-->
+            <!--est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco-->
+            <!--aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do-->
+            <!--est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.-->
+            <!--</p>-->
+            <!--<p>-->
+            <!--Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation.-->
+            <!--Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint-->
+            <!--consequat aliqua. Ex proident labore et laborum tempor fugiat sint magna veniam minim. Nulla dolor-->
+            <!--labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non-->
+            <!--dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non voluptate culpa qui do.-->
+            <!--Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore.-->
+            <!--Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum-->
+            <!--cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.-->
+            <!--</p>-->
+            <!--</div>-->
+
+            <!--<div class="demo-content mdl-color&#45;&#45;white mdl-shadow&#45;&#45;4dp content mdl-color-text&#45;&#45;grey-800 mdl-cell mdl-cell&#45;&#45;8-col">-->
+            <div class="my-card mdl-card mdl-cell  mdl-shadow--4dp content  mdl-cell--8-col mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-color-text--white">
+                    Detecting English Words
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width">
+                                    <textarea class="mdl-textfield__input font-unicode" type="text"
+                                              id="detect_text"
+                                              name="detect_text"></textarea>
+                            <label class="mdl-textfield__label" for="detect_text" id="detect_text_hint">
+                                Paste the text. It will detect and highlight english words in it
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect btn-font-size"
+                       id="paste" name="paste">Paste</a>
+                </div>
+            </div>
+
+        </div>
+        <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer--middle-section">
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">Features</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">Details</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="#">Spec</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">Technology</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Patterns</a></li>
+                        <li><a href="#">Usage</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contracts</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">FAQ</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="#">Questions</a></li>
+                        <li><a href="#">Answers</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mdl-mega-footer--bottom-section">
+                <div class="mdl-logo">
+                    More Information
+                </div>
+                <ul class="mdl-mega-footer--link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy and Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </main>
+</div>
 </body>
+<div class="copied"></div>
 </html>
