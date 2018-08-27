@@ -1,10 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- <link rel="stylesheet" href="../static/assets/css/material.css"> -->
+    <!-- <link rel="stylesheet" href="../static/assets/style.css"> -->
+    <!-- <script src="../static/assets/js/material.js"></script> -->
+    <!-- <script src="../static/assets/js/jquery.js"></script> -->
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/material.css') }}">
+    <script src="{{ url_for('static', filename='assets/js/material.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/app.css') }}">
+    <script src="{{ url_for('static', filename='assets/js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--teal">
+        <div class="mdl-layout__header-row mdl-layout--large-screen-only">
+            <span class="mdl-layout-title">Universal Font Converter</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index">Home</a>
+                <a class="mdl-navigation__link" href="detect">Detect Words</a>
+                <a class="mdl-navigation__link" href="about">About</a>
+                <a class="mdl-navigation__link" href="faq">FAQ</a>
+            </nav>
+        </div>
+        <div class="mdl-layout__header-row mdl-layout--small-screen-only">
+            <span class="mdl-layout-title">Universal Font Converter</span>
+        </div>
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">By Team Geo-Joy</span>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">UFC</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="index">Home</a>
+            <a class="mdl-navigation__link" href="detect">Detect Words</a>
+            <a class="mdl-navigation__link" href="about">About</a>
+            <a class="mdl-navigation__link" href="faq">FAQ</a>
+        </nav>
+    </div>
+
+    <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+            <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                <p>Hello world</p>
+            </div>
+        </div>
+        <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer--middle-section">
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">Features</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="about">About</a></li>
+                        <li><a href="about">Terms</a></li>
+                        <li><a href="about">Partners</a></li>
+                        <li><a href="about">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">Details</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="about">Spec</a></li>
+                        <li><a href="about">Tools</a></li>
+                        <li><a href="about">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">Technology</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="about">How it works</a></li>
+                        <li><a href="about">Patterns</a></li>
+                        <li><a href="about">Usage</a></li>
+                        <li><a href="about">Products</a></li>
+                        <li><a href="about">Contracts</a></li>
+                    </ul>
+                </div>
+                <div class="mdl-mega-footer--drop-down-section">
+                    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+                    <h1 class="mdl-mega-footer--heading">FAQ</h1>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="faq">Questions</a></li>
+                        <li><a href="faq">Answers</a></li>
+                        <li><a href="faq">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mdl-mega-footer--bottom-section">
+                <div class="mdl-logo">
+                    More Information
+                </div>
+                <ul class="mdl-mega-footer--link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy and Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </main>
+</div>
 </body>
+<div class="copied"></div>
 </html>

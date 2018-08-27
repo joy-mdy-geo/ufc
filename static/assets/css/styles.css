@@ -25,6 +25,11 @@ html, body {
   color: white;
 }
 
+
+.faq {
+    padding-left: 40px;
+}
+
 .mdl-demo .mdl-layout-title {
     padding-left: 40px;
 }
