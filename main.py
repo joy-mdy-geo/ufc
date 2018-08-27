@@ -42,5 +42,12 @@ def copy():
     return jsonify(result=txt)
 
 
+@app.route('/_detect', methods=["POST"])
+def detecttt():
+    txt = request.form['text']
+    txt = controller.detect(txt)
+    return jsonify(result=txt)
+
+
 if __name__ == "__main__":
     app.run(debug=True)

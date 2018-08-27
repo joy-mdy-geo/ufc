@@ -1,4 +1,5 @@
 from converter import uni2win, uni2zg, win2uni, zg2uni
+import re
 
 
 def convert(from_encoding='from_zawgyi', to_encoding='to_unicode', input=''):
@@ -20,4 +21,16 @@ def convert(from_encoding='from_zawgyi', to_encoding='to_unicode', input=''):
             result = win2uni.convert(input)
         elif to_encoding == 'to_zawgyi':
             result = uni2zg.convert(win2uni.convert(input))
+    return result
+
+
+def detect(txt):
+    result = ''
+    for i in txt:
+        if 'a' <= i.lower() <= 'z':
+            result += "<eng>" + i + "</eng>"
+        else:
+            result += i
+    result = re.sub(u'</eng><eng>', u'', result)
+    result = re.sub(u'</eng> <eng>',u' ', result)
     return result
