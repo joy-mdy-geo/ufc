@@ -63,5 +63,26 @@ $(document).ready(function () {
             $("#to_text").css("font-family", "WinInnwa");
         }
     });
+
+
+    $('#detect').bind('click', function (event) {
+        $.ajax({
+            type: "POST",
+            url: "/_detect",
+            data: {
+                text: $('textarea[name="detect_text"]').val(),
+            }
+        }).done(function (data) {
+            if (data.error) {
+                //  show error message
+            } else {
+                $("#detect_text").val(data.result).show();
+                $("#detect_text_hint").hide();
+            }
+        });
+        event.preventDefault();
+    });
+
+
 });
 
