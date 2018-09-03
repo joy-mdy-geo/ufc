@@ -23,9 +23,9 @@ def precompose(input):
     output = re.sub(u'\u102d\u1036', u'\u108e', output)
     output = re.sub(u'\u1004\u103a\u1039', u'\u1064', output)
     output = re.sub(u'(\u1064)([\u1000-\u1021])', '\\2\\1', output)
-    output = re.sub(u'([\u1000-\u1021])\u1064\u102d', u'\\1\u108b', output)
-    output = re.sub(u'([\u1000-\u1021])\u1064\u102e', u'\\1\u108c', output)
-    output = re.sub(u'([\u1000-\u1021])\u1064\u1036', u'\\1\u108d', output)
+    output = re.sub(u'([\u1000-\u1021])(\u1064)((?:\u103c)?)\u102d', u'\\1\\3\u108b', output)
+    output = re.sub(u'([\u1000-\u1021])(\u1064)((?:\u103c)?)\u102e', u'\\1\\3\u108c', output)
+    output = re.sub(u'([\u1000-\u1021])(\u1064)((?:\u103c)?)\u1036', u'\\1\\3\u108d', output)
 
     # pr_sint
     output = re.sub(u'\u1039\u1000', u'\u1060', output)  # ka_gyi
@@ -78,8 +78,8 @@ def shape(input):
 
     # ya_yit
     output = re.sub(u'\u103b([\u1000\u1003\u1006\u100f\u1010\u1011\u1018\u101a\u101c\u101e\u101f\u1021])', u'\u107e\\1', output)  # ya_yit_agyi
-    output = re.sub(u'\u103b([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u107f\\1\\2', output)  # yayit with long_gyi_din(sanke)
-    output = re.sub(u'\u107e([\u1000-\u1021])([\u102d\u102e\u1036])', u'\u1080\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
+    output = re.sub(u'\u103b([\u1000-\u1021])([\u102d\u102e\u1036\u108b\u108c\u108d\u108e])', u'\u107f\\1\\2', output)  # yayit with long_gyi_din(sanke)
+    output = re.sub(u'\u107e([\u1000-\u1021])([\u102d\u102e\u1036\u108b\u108c\u108d\u108e])', u'\u1080\\1\\2', output)  # yayit_agi with long_gyi_din(sanke)
     output = re.sub(u'\u103b([\u1000-\u1021])(\u103c)', u'\u1081\\1\\2', output)  # yayit with waswe
     output = re.sub(u'\u107e([\u1000-\u1021])(\u103c)', u'\u1082\\1\\2', output)  # yayit_agyi with waswe
     output = re.sub(u'\u103b([\u1000-\u1021])([\u1060-\u1093])', u'\u1081\\1\\2', output)  # yayit with pr_sint
