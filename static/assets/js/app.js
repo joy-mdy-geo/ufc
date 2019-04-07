@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     $('input[type=radio][name=from]').change(function () {
         if (this.value === 'from_zawgyi') {
-            $("#from_text").css("font-family", "Zawgyi-One");
+            $("#from_text").css("font-family", "zawgyione");
         } else if (this.value === 'from_unicode') {
             $("#from_text").css("font-family", "Padauk");
         } else if (this.value === 'from_win') {
@@ -56,7 +56,7 @@ $(document).ready(function () {
     });
     $('input[type=radio][name=to]').change(function () {
         if (this.value === 'to_zawgyi') {
-            $("#to_text").css("font-family", "Zawgyi-One");
+            $("#to_text").css("font-family", "zawgyione");
         } else if (this.value === 'to_unicode') {
             $("#to_text").css("font-family", "Padauk");
         } else if (this.value === 'to_win') {
